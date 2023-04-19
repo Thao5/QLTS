@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA932ADE-A1A0-4D1A-9D37-A001276A5420}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI_Quanly</RootNamespace>
+    <AssemblyName>GUI_Quanly</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAuthors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAuthors.Designer.cs">
+      <DependentUpon>AddAuthors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBorrowOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBorrowOrders.Designer.cs">
+      <DependentUpon>AddBorrowOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBuyOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBuyOrders.Designer.cs">
+      <DependentUpon>AddBuyOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCards.Designer.cs">
+      <DependentUpon>AddCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProducts.Designer.cs">
+      <DependentUpon>AddProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPublishers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPublishers.Designer.cs">
+      <DependentUpon>AddPublishers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUsers.Designer.cs">
+      <DependentUpon>AddUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAuthors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAuthors.Designer.cs">
+      <DependentUpon>AdminAuthors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminBorrowOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminBorrowOrders.Designer.cs">
+      <DependentUpon>AdminBorrowOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminBuyOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminBuyOrders.Designer.cs">
+      <DependentUpon>AdminBuyOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCards.Designer.cs">
+      <DependentUpon>AdminCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminProduct.Designer.cs">
+      <DependentUpon>AdminProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPublishers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPublishers.Designer.cs">
+      <DependentUpon>AdminPublishers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUsers.Designer.cs">
+      <DependentUpon>AdminUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authors.Designer.cs">
+      <DependentUpon>Authors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Borrow Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrow Orders.Designer.cs">
+      <DependentUpon>Borrow Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuyOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyOrders.Designer.cs">
+      <DependentUpon>BuyOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckOut.Designer.cs">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="code.cs">
+      <DependentUpon>ModelQLTS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ltcsdlDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ltcsdlDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ModelQLTS.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelQLTS.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelQLTS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelQLTS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelQLTS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelQLTS.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="NXB.cs">
+      <DependentUpon>ModelQLTS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publishers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Publishers.Designer.cs">
+      <DependentUpon>Publishers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sach.cs">
+      <DependentUpon>ModelQLTS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sachduocmua.cs">
+      <DependentUpon>ModelQLTS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sachduocthue.cs">
+      <DependentUpon>ModelQLTS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sachthuoctacgia.cs">
+      <DependentUpon>ModelQLTS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>ModelQLTS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="taikhoan.cs">
+      <DependentUpon>ModelQLTS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAuthors.resx">
+      <DependentUpon>AddAuthors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBorrowOrders.resx">
+      <DependentUpon>AddBorrowOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBuyOrders.resx">
+      <DependentUpon>AddBuyOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCards.resx">
+      <DependentUpon>AddCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProducts.resx">
+      <DependentUpon>AddProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPublishers.resx">
+      <DependentUpon>AddPublishers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUsers.resx">
+      <DependentUpon>AddUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAuthors.resx">
+      <DependentUpon>AdminAuthors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminBorrowOrders.resx">
+      <DependentUpon>AdminBorrowOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminBuyOrders.resx">
+      <DependentUpon>AdminBuyOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCards.resx">
+      <DependentUpon>AdminCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminProduct.resx">
+      <DependentUpon>AdminProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPublishers.resx">
+      <DependentUpon>AdminPublishers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUsers.resx">
+      <DependentUpon>AdminUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authors.resx">
+      <DependentUpon>Authors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrow Orders.resx">
+      <DependentUpon>Borrow Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyOrders.resx">
+      <DependentUpon>BuyOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckOut.resx">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Publishers.resx">
+      <DependentUpon>Publishers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ltcsdlDataSet.xsc">
+      <DependentUpon>ltcsdlDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ltcsdlDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ltcsdlDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ltcsdlDataSet.xss">
+      <DependentUpon>ltcsdlDataSet.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="ModelQLTS.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelQLTS.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelQLTS.edmx.diagram">
+      <DependentUpon>ModelQLTS.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModelQLTS.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelQLTS.edmx</DependentUpon>
+      <LastGenOutput>ModelQLTS.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelQLTS.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelQLTS.edmx</DependentUpon>
+      <LastGenOutput>ModelQLTS.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
