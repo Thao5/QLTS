@@ -37,20 +37,23 @@
             this.dataGridPublishers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridPublishers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridPublishers.Location = new System.Drawing.Point(0, 0);
+            this.dataGridPublishers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridPublishers.Name = "dataGridPublishers";
             this.dataGridPublishers.RowHeadersWidth = 51;
             this.dataGridPublishers.RowTemplate.Height = 24;
-            this.dataGridPublishers.Size = new System.Drawing.Size(919, 729);
+            this.dataGridPublishers.Size = new System.Drawing.Size(689, 592);
             this.dataGridPublishers.TabIndex = 2;
             // 
             // Publishers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 729);
+            this.ClientSize = new System.Drawing.Size(689, 592);
             this.Controls.Add(this.dataGridPublishers);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Publishers";
             this.Text = "Publishers";
+            this.Load += new System.EventHandler(this.Publishers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridPublishers)).EndInit();
             this.ResumeLayout(false);
 

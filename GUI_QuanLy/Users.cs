@@ -12,9 +12,15 @@ namespace GUI_Quanly
 {
     public partial class Users : Form
     {
+        quanlytiemsachEntities3 db = new quanlytiemsachEntities3();
         public Users()
         {
             InitializeComponent();
+        }
+
+        private void Users_Load(object sender, EventArgs e)
+        {
+         
         }
     }
 }

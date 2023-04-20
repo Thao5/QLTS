@@ -13,10 +13,10 @@ namespace GUI_Quanly
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class quanlytiemsachEntities3 : DbContext
+    public partial class quanlytiemsachEntities5 : DbContext
     {
-        public quanlytiemsachEntities3()
-            : base("name=quanlytiemsachEntities3")
+        public quanlytiemsachEntities5()
+            : base("name=quanlytiemsachEntities5")
         {
         }
     

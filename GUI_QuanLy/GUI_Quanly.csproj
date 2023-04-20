@@ -58,12 +58,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddAuthors.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddAuthors.Designer.cs">
-      <DependentUpon>AddAuthors.cs</DependentUpon>
-    </Compile>
     <Compile Include="AddBorrowOrders.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,12 +175,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
     <Compile Include="ltcsdlDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -236,12 +224,6 @@
     <Compile Include="sachthuoctacgia.cs">
       <DependentUpon>ModelQLTS.tt</DependentUpon>
     </Compile>
-    <Compile Include="SignUp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SignUp.Designer.cs">
-      <DependentUpon>SignUp.cs</DependentUpon>
-    </Compile>
     <Compile Include="sysdiagram.cs">
       <DependentUpon>ModelQLTS.tt</DependentUpon>
     </Compile>
@@ -254,9 +236,6 @@
     <Compile Include="Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddAuthors.resx">
-      <DependentUpon>AddAuthors.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AddBorrowOrders.resx">
       <DependentUpon>AddBorrowOrders.cs</DependentUpon>
     </EmbeddedResource>
@@ -314,9 +293,6 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
     </EmbeddedResource>
@@ -331,9 +307,6 @@
     </Compile>
     <EmbeddedResource Include="Publishers.resx">
       <DependentUpon>Publishers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SignUp.resx">
-      <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users.resx">
       <DependentUpon>Users.cs</DependentUpon>

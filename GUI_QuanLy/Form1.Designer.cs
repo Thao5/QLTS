@@ -60,8 +60,9 @@
             this.panel1.Controls.Add(this.panelLogo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 778);
+            this.panel1.Size = new System.Drawing.Size(165, 632);
             this.panel1.TabIndex = 0;
             // 
             // btnUser
@@ -74,10 +75,11 @@
             this.btnUser.ForeColor = System.Drawing.SystemColors.Window;
             this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
             this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUser.Location = new System.Drawing.Point(0, 330);
+            this.btnUser.Location = new System.Drawing.Point(0, 270);
+            this.btnUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUser.Name = "btnUser";
-            this.btnUser.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnUser.Size = new System.Drawing.Size(220, 50);
+            this.btnUser.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnUser.Size = new System.Drawing.Size(165, 41);
             this.btnUser.TabIndex = 6;
             this.btnUser.Text = "User";
             this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -95,10 +97,11 @@
             this.btnNhaXuatBan.ForeColor = System.Drawing.SystemColors.Window;
             this.btnNhaXuatBan.Image = ((System.Drawing.Image)(resources.GetObject("btnNhaXuatBan.Image")));
             this.btnNhaXuatBan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNhaXuatBan.Location = new System.Drawing.Point(0, 280);
+            this.btnNhaXuatBan.Location = new System.Drawing.Point(0, 229);
+            this.btnNhaXuatBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNhaXuatBan.Name = "btnNhaXuatBan";
-            this.btnNhaXuatBan.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnNhaXuatBan.Size = new System.Drawing.Size(220, 50);
+            this.btnNhaXuatBan.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnNhaXuatBan.Size = new System.Drawing.Size(165, 41);
             this.btnNhaXuatBan.TabIndex = 5;
             this.btnNhaXuatBan.Text = "Publishers";
             this.btnNhaXuatBan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -116,10 +119,11 @@
             this.btnTacGia.ForeColor = System.Drawing.SystemColors.Window;
             this.btnTacGia.Image = ((System.Drawing.Image)(resources.GetObject("btnTacGia.Image")));
             this.btnTacGia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTacGia.Location = new System.Drawing.Point(0, 230);
+            this.btnTacGia.Location = new System.Drawing.Point(0, 188);
+            this.btnTacGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTacGia.Name = "btnTacGia";
-            this.btnTacGia.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnTacGia.Size = new System.Drawing.Size(220, 50);
+            this.btnTacGia.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnTacGia.Size = new System.Drawing.Size(165, 41);
             this.btnTacGia.TabIndex = 4;
             this.btnTacGia.Text = "Authors";
             this.btnTacGia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -137,10 +141,11 @@
             this.btnSachMuon.ForeColor = System.Drawing.SystemColors.Window;
             this.btnSachMuon.Image = ((System.Drawing.Image)(resources.GetObject("btnSachMuon.Image")));
             this.btnSachMuon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSachMuon.Location = new System.Drawing.Point(0, 180);
+            this.btnSachMuon.Location = new System.Drawing.Point(0, 147);
+            this.btnSachMuon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSachMuon.Name = "btnSachMuon";
-            this.btnSachMuon.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnSachMuon.Size = new System.Drawing.Size(220, 50);
+            this.btnSachMuon.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnSachMuon.Size = new System.Drawing.Size(165, 41);
             this.btnSachMuon.TabIndex = 3;
             this.btnSachMuon.Text = "Borrow Orders";
             this.btnSachMuon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -158,10 +163,11 @@
             this.btnSachMua.ForeColor = System.Drawing.SystemColors.Window;
             this.btnSachMua.Image = ((System.Drawing.Image)(resources.GetObject("btnSachMua.Image")));
             this.btnSachMua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSachMua.Location = new System.Drawing.Point(0, 130);
+            this.btnSachMua.Location = new System.Drawing.Point(0, 106);
+            this.btnSachMua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSachMua.Name = "btnSachMua";
-            this.btnSachMua.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnSachMua.Size = new System.Drawing.Size(220, 50);
+            this.btnSachMua.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnSachMua.Size = new System.Drawing.Size(165, 41);
             this.btnSachMua.TabIndex = 2;
             this.btnSachMua.Text = "Buy Orders";
             this.btnSachMua.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -179,10 +185,11 @@
             this.btnSanPham.ForeColor = System.Drawing.SystemColors.Window;
             this.btnSanPham.Image = ((System.Drawing.Image)(resources.GetObject("btnSanPham.Image")));
             this.btnSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSanPham.Location = new System.Drawing.Point(0, 80);
+            this.btnSanPham.Location = new System.Drawing.Point(0, 65);
+            this.btnSanPham.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSanPham.Name = "btnSanPham";
-            this.btnSanPham.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnSanPham.Size = new System.Drawing.Size(220, 50);
+            this.btnSanPham.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnSanPham.Size = new System.Drawing.Size(165, 41);
             this.btnSanPham.TabIndex = 1;
             this.btnSanPham.Text = "Products";
             this.btnSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -195,8 +202,9 @@
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(152)))), ((int)(((byte)(224)))));
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 80);
+            this.panelLogo.Size = new System.Drawing.Size(165, 65);
             this.panelLogo.TabIndex = 0;
             this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
             // 
@@ -209,9 +217,10 @@
             this.panelTitle.Controls.Add(this.txtSearch);
             this.panelTitle.Controls.Add(this.lbTitle);
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle.Location = new System.Drawing.Point(220, 0);
+            this.panelTitle.Location = new System.Drawing.Point(165, 0);
+            this.panelTitle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(1205, 90);
+            this.panelTitle.Size = new System.Drawing.Size(904, 73);
             this.panelTitle.TabIndex = 2;
             this.panelTitle.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitle_Paint);
             // 
@@ -221,9 +230,10 @@
             this.btnOrders.FlatAppearance.BorderSize = 0;
             this.btnOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrders.Image = ((System.Drawing.Image)(resources.GetObject("btnOrders.Image")));
-            this.btnOrders.Location = new System.Drawing.Point(1132, 21);
+            this.btnOrders.Location = new System.Drawing.Point(849, 17);
+            this.btnOrders.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOrders.Name = "btnOrders";
-            this.btnOrders.Size = new System.Drawing.Size(61, 49);
+            this.btnOrders.Size = new System.Drawing.Size(46, 40);
             this.btnOrders.TabIndex = 5;
             this.btnOrders.UseVisualStyleBackColor = true;
             this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
@@ -234,9 +244,10 @@
             this.btnCart.FlatAppearance.BorderSize = 0;
             this.btnCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCart.Image = ((System.Drawing.Image)(resources.GetObject("btnCart.Image")));
-            this.btnCart.Location = new System.Drawing.Point(1043, 21);
+            this.btnCart.Location = new System.Drawing.Point(782, 17);
+            this.btnCart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCart.Name = "btnCart";
-            this.btnCart.Size = new System.Drawing.Size(61, 49);
+            this.btnCart.Size = new System.Drawing.Size(46, 40);
             this.btnCart.TabIndex = 4;
             this.btnCart.UseVisualStyleBackColor = true;
             this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
@@ -248,10 +259,10 @@
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.Location = new System.Drawing.Point(947, 21);
+            this.btnSearch.Location = new System.Drawing.Point(710, 17);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(0);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(61, 49);
+            this.btnSearch.Size = new System.Drawing.Size(46, 40);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
@@ -260,10 +271,10 @@
             // 
             this.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(294, 21);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(50);
+            this.txtSearch.Location = new System.Drawing.Point(220, 17);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(38, 41, 38, 41);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(653, 49);
+            this.txtSearch.Size = new System.Drawing.Size(491, 41);
             this.txtSearch.TabIndex = 1;
             // 
             // lbTitle
@@ -272,9 +283,10 @@
             this.lbTitle.AutoSize = true;
             this.lbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.Color.White;
-            this.lbTitle.Location = new System.Drawing.Point(6, 24);
+            this.lbTitle.Location = new System.Drawing.Point(4, 20);
+            this.lbTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(130, 42);
+            this.lbTitle.Size = new System.Drawing.Size(103, 36);
             this.lbTitle.TabIndex = 0;
             this.lbTitle.Text = "HOME";
             // 
@@ -282,23 +294,25 @@
             // 
             this.panelContainer.BackColor = System.Drawing.Color.LightGray;
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainer.Location = new System.Drawing.Point(220, 90);
-            this.panelContainer.Margin = new System.Windows.Forms.Padding(20);
+            this.panelContainer.Location = new System.Drawing.Point(165, 73);
+            this.panelContainer.Margin = new System.Windows.Forms.Padding(15, 16, 15, 16);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1205, 688);
+            this.panelContainer.Size = new System.Drawing.Size(904, 559);
             this.panelContainer.TabIndex = 3;
             this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1425, 778);
+            this.ClientSize = new System.Drawing.Size(1069, 632);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             this.panel1.ResumeLayout(false);
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
