@@ -44,8 +44,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbLoaiNguoiDung = new System.Windows.Forms.ComboBox();
             this.dateNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCancelUsers
@@ -56,7 +56,7 @@
             this.btnCancelUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelUsers.ForeColor = System.Drawing.Color.White;
-            this.btnCancelUsers.Location = new System.Drawing.Point(457, 502);
+            this.btnCancelUsers.Location = new System.Drawing.Point(415, 541);
             this.btnCancelUsers.Name = "btnCancelUsers";
             this.btnCancelUsers.Size = new System.Drawing.Size(106, 40);
             this.btnCancelUsers.TabIndex = 31;
@@ -72,7 +72,7 @@
             this.btnSaveUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveUsers.ForeColor = System.Drawing.Color.White;
-            this.btnSaveUsers.Location = new System.Drawing.Point(266, 502);
+            this.btnSaveUsers.Location = new System.Drawing.Point(224, 541);
             this.btnSaveUsers.Name = "btnSaveUsers";
             this.btnSaveUsers.Size = new System.Drawing.Size(106, 40);
             this.btnSaveUsers.TabIndex = 30;
@@ -115,6 +115,7 @@
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(286, 291);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(354, 34);
             this.txtPassword.TabIndex = 25;
             // 
@@ -195,13 +196,16 @@
             // 
             // cbLoaiNguoiDung
             // 
-            this.cbLoaiNguoiDung.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbLoaiNguoiDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbLoaiNguoiDung.FormattingEnabled = true;
+            this.cbLoaiNguoiDung.Items.AddRange(new object[] {
+            "admin",
+            "user",
+            "author"});
             this.cbLoaiNguoiDung.Location = new System.Drawing.Point(286, 340);
             this.cbLoaiNguoiDung.Name = "cbLoaiNguoiDung";
             this.cbLoaiNguoiDung.Size = new System.Drawing.Size(354, 37);
             this.cbLoaiNguoiDung.TabIndex = 32;
-            this.cbLoaiNguoiDung.SelectedIndexChanged += new System.EventHandler(this.cbLoaiNguoiDung_SelectedIndexChanged);
             // 
             // dateNgaySinh
             // 
@@ -213,31 +217,30 @@
             this.dateNgaySinh.Size = new System.Drawing.Size(184, 34);
             this.dateNgaySinh.TabIndex = 33;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(237, 28);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(37, 25);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "ID:";
+            this.label8.Click += new System.EventHandler(this.label1_Click);
+            // 
             // txtID
             // 
             this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(286, 29);
+            this.txtID.Location = new System.Drawing.Point(286, 22);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(354, 34);
-            this.txtID.TabIndex = 35;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(138, 35);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(142, 25);
-            this.label10.TabIndex = 34;
-            this.label10.Text = "ID Người dùng:";
+            this.txtID.TabIndex = 17;
             // 
             // AddUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(908, 687);
-            this.Controls.Add(this.txtID);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.dateNgaySinh);
             this.Controls.Add(this.cbLoaiNguoiDung);
             this.Controls.Add(this.btnCancelUsers);
@@ -252,7 +255,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtTen);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.txtHo);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
             this.Name = "AddUsers";
             this.Text = "AddUsers";
@@ -279,7 +284,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbLoaiNguoiDung;
         private System.Windows.Forms.DateTimePicker dateNgaySinh;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.Label label10;
     }
 }

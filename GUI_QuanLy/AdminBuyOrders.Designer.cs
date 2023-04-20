@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnUpdateBuyOrders = new System.Windows.Forms.Button();
+            this.btnAddBuyOrders = new System.Windows.Forms.Button();
             this.btnDeleteBuyOrders = new System.Windows.Forms.Button();
             this.btnEditBuyOrders = new System.Windows.Forms.Button();
             this.dataGridAdminBuy = new System.Windows.Forms.DataGridView();
-            this.btnAddBuyOrders = new System.Windows.Forms.Button();
-            this.btnUpdateBuyOrders = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAdminBuy)).BeginInit();
             this.SuspendLayout();
@@ -51,6 +51,37 @@
             this.panel2.Size = new System.Drawing.Size(1004, 60);
             this.panel2.TabIndex = 5;
             // 
+            // btnUpdateBuyOrders
+            // 
+            this.btnUpdateBuyOrders.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUpdateBuyOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
+            this.btnUpdateBuyOrders.FlatAppearance.BorderSize = 0;
+            this.btnUpdateBuyOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateBuyOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateBuyOrders.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateBuyOrders.Location = new System.Drawing.Point(449, 10);
+            this.btnUpdateBuyOrders.Name = "btnUpdateBuyOrders";
+            this.btnUpdateBuyOrders.Size = new System.Drawing.Size(106, 40);
+            this.btnUpdateBuyOrders.TabIndex = 32;
+            this.btnUpdateBuyOrders.Text = "Update";
+            this.btnUpdateBuyOrders.UseVisualStyleBackColor = false;
+            // 
+            // btnAddBuyOrders
+            // 
+            this.btnAddBuyOrders.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddBuyOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
+            this.btnAddBuyOrders.FlatAppearance.BorderSize = 0;
+            this.btnAddBuyOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddBuyOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddBuyOrders.ForeColor = System.Drawing.Color.White;
+            this.btnAddBuyOrders.Location = new System.Drawing.Point(581, 10);
+            this.btnAddBuyOrders.Name = "btnAddBuyOrders";
+            this.btnAddBuyOrders.Size = new System.Drawing.Size(106, 40);
+            this.btnAddBuyOrders.TabIndex = 2;
+            this.btnAddBuyOrders.Text = "Add";
+            this.btnAddBuyOrders.UseVisualStyleBackColor = false;
+            this.btnAddBuyOrders.Click += new System.EventHandler(this.btnAddBuyOrders_Click);
+            // 
             // btnDeleteBuyOrders
             // 
             this.btnDeleteBuyOrders.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -65,6 +96,7 @@
             this.btnDeleteBuyOrders.TabIndex = 1;
             this.btnDeleteBuyOrders.Text = "Delete";
             this.btnDeleteBuyOrders.UseVisualStyleBackColor = false;
+            this.btnDeleteBuyOrders.Click += new System.EventHandler(this.btnDeleteBuyOrders_Click);
             // 
             // btnEditBuyOrders
             // 
@@ -92,37 +124,6 @@
             this.dataGridAdminBuy.Size = new System.Drawing.Size(1004, 653);
             this.dataGridAdminBuy.TabIndex = 6;
             // 
-            // btnAddBuyOrders
-            // 
-            this.btnAddBuyOrders.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddBuyOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
-            this.btnAddBuyOrders.FlatAppearance.BorderSize = 0;
-            this.btnAddBuyOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddBuyOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddBuyOrders.ForeColor = System.Drawing.Color.White;
-            this.btnAddBuyOrders.Location = new System.Drawing.Point(581, 10);
-            this.btnAddBuyOrders.Name = "btnAddBuyOrders";
-            this.btnAddBuyOrders.Size = new System.Drawing.Size(106, 40);
-            this.btnAddBuyOrders.TabIndex = 2;
-            this.btnAddBuyOrders.Text = "Add";
-            this.btnAddBuyOrders.UseVisualStyleBackColor = false;
-            this.btnAddBuyOrders.Click += new System.EventHandler(this.btnAddBuyOrders_Click);
-            // 
-            // btnUpdateBuyOrders
-            // 
-            this.btnUpdateBuyOrders.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdateBuyOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
-            this.btnUpdateBuyOrders.FlatAppearance.BorderSize = 0;
-            this.btnUpdateBuyOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateBuyOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateBuyOrders.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateBuyOrders.Location = new System.Drawing.Point(449, 10);
-            this.btnUpdateBuyOrders.Name = "btnUpdateBuyOrders";
-            this.btnUpdateBuyOrders.Size = new System.Drawing.Size(106, 40);
-            this.btnUpdateBuyOrders.TabIndex = 32;
-            this.btnUpdateBuyOrders.Text = "Update";
-            this.btnUpdateBuyOrders.UseVisualStyleBackColor = false;
-            // 
             // AdminBuyOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -132,6 +133,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "AdminBuyOrders";
             this.Text = "AdminBuyOrders";
+            this.Load += new System.EventHandler(this.AdminBuyOrders_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAdminBuy)).EndInit();
             this.ResumeLayout(false);

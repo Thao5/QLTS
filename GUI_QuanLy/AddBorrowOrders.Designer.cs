@@ -34,8 +34,8 @@
             this.btnCancelBorrow = new System.Windows.Forms.Button();
             this.btnSaveBorrow = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.dateNgayThue = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cbNguoiThue
@@ -74,7 +74,7 @@
             this.btnCancelBorrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelBorrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelBorrow.ForeColor = System.Drawing.Color.White;
-            this.btnCancelBorrow.Location = new System.Drawing.Point(403, 289);
+            this.btnCancelBorrow.Location = new System.Drawing.Point(407, 348);
             this.btnCancelBorrow.Name = "btnCancelBorrow";
             this.btnCancelBorrow.Size = new System.Drawing.Size(106, 40);
             this.btnCancelBorrow.TabIndex = 44;
@@ -90,7 +90,7 @@
             this.btnSaveBorrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveBorrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveBorrow.ForeColor = System.Drawing.Color.White;
-            this.btnSaveBorrow.Location = new System.Drawing.Point(212, 289);
+            this.btnSaveBorrow.Location = new System.Drawing.Point(216, 348);
             this.btnSaveBorrow.Name = "btnSaveBorrow";
             this.btnSaveBorrow.Size = new System.Drawing.Size(106, 40);
             this.btnSaveBorrow.TabIndex = 43;
@@ -108,31 +108,33 @@
             this.label1.TabIndex = 42;
             this.label1.Text = "Tên Sách:";
             // 
-            // txtID
+            // dateNgayThue
             // 
-            this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(232, 50);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(354, 34);
-            this.txtID.TabIndex = 49;
+            this.dateNgayThue.CustomFormat = "dd/MM/yyyy";
+            this.dateNgayThue.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateNgayThue.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateNgayThue.Location = new System.Drawing.Point(232, 230);
+            this.dateNgayThue.Name = "dateNgayThue";
+            this.dateNgayThue.Size = new System.Drawing.Size(354, 34);
+            this.dateNgayThue.TabIndex = 49;
             // 
-            // label10
+            // label3
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(137, 59);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(88, 25);
-            this.label10.TabIndex = 48;
-            this.label10.Text = "ID Thuê:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(110, 238);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(115, 25);
+            this.label3.TabIndex = 48;
+            this.label3.Text = "Ngày Thuê:";
             // 
             // AddBorrowOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(845, 682);
-            this.Controls.Add(this.txtID);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.dateNgayThue);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.cbNguoiThue);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.cbTenSachBorrow);
@@ -141,6 +143,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AddBorrowOrders";
             this.Text = "AddBorrowOrders";
+            this.Load += new System.EventHandler(this.AddBorrowOrders_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,7 +157,7 @@
         private System.Windows.Forms.Button btnCancelBorrow;
         private System.Windows.Forms.Button btnSaveBorrow;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DateTimePicker dateNgayThue;
+        private System.Windows.Forms.Label label3;
     }
 }

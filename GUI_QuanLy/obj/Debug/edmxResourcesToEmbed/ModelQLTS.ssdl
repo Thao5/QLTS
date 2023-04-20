@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="quanlytiemsachModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'quanlytiemsach.dbo.code' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="code">
     <Key>
       <PropertyRef Name="id" />
-      <PropertyRef Name="valid" />
     </Key>
     <Property Name="id" Type="varchar" MaxLength="8" Nullable="false" />
     <Property Name="valid" Type="bit" Nullable="false" />
@@ -183,6 +180,7 @@ warning 6002: The table/view 'quanlytiemsach.dbo.code' does not have a primary k
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="quanlytiemsachModelStoreContainer">
+    <EntitySet Name="code" EntityType="Self.code" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="NXB" EntityType="Self.NXB" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sach" EntityType="Self.sach" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sachduocmua" EntityType="Self.sachduocmua" Schema="dbo" store:Type="Tables" />
@@ -190,14 +188,6 @@ warning 6002: The table/view 'quanlytiemsach.dbo.code' does not have a primary k
     <EntitySet Name="sachthuoctacgia" EntityType="Self.sachthuoctacgia" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="taikhoan" EntityType="Self.taikhoan" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="code" EntityType="Self.code" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [code].[id] AS [id], 
-    [code].[valid] AS [valid], 
-    [code].[id_user] AS [id_user], 
-    [code].[ngaynap] AS [ngaynap]
-    FROM [dbo].[code] AS [code]</DefiningQuery>
-    </EntitySet>
     <AssociationSet Name="FK__code__id_user__04E4BC85" Association="Self.FK__code__id_user__04E4BC85">
       <End Role="taikhoan" EntitySet="taikhoan" />
       <End Role="code" EntitySet="code" />

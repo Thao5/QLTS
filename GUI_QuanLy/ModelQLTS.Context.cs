@@ -25,6 +25,7 @@ namespace GUI_Quanly
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<code> codes { get; set; }
         public virtual DbSet<NXB> NXBs { get; set; }
         public virtual DbSet<sach> saches { get; set; }
         public virtual DbSet<sachduocmua> sachduocmuas { get; set; }
@@ -32,6 +33,5 @@ namespace GUI_Quanly
         public virtual DbSet<sachthuoctacgia> sachthuoctacgias { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<taikhoan> taikhoans { get; set; }
-        public virtual DbSet<code> codes { get; set; }
     }
 }

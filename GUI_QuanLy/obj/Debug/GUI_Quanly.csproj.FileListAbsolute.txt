@@ -82,11 +82,3 @@ D:\QLTS2\New folder\GUI_Quanly\bin\Debug\EntityFramework.SqlServer.dll
 D:\QLTS2\New folder\GUI_Quanly\bin\Debug\EntityFramework.xml
 D:\QLTS2\New folder\GUI_Quanly\bin\Debug\EntityFramework.SqlServer.xml
 D:\QLTS2\New folder\GUI_Quanly\obj\Debug\GUI_Quanly.csproj.CopyComplete
-D:\C#Folder\New folder\GUI_Quanly\bin\Debug\EntityFramework.dll
-D:\C#Folder\New folder\GUI_Quanly\bin\Debug\EntityFramework.SqlServer.dll
-D:\C#Folder\New folder\GUI_Quanly\bin\Debug\EntityFramework.xml
-D:\C#Folder\New folder\GUI_Quanly\bin\Debug\EntityFramework.SqlServer.xml
-D:\C#Folder\New folder\GUI_Quanly\obj\Debug\GUI_Quanly.AddAuthors.resources
-D:\C#Folder\New folder\GUI_Quanly\obj\Debug\GUI_Quanly.csproj.CopyComplete
-D:\C#Folder\New folder\GUI_Quanly\obj\Debug\GUI_Quanly.Login.resources
-D:\C#Folder\New folder\GUI_Quanly\obj\Debug\GUI_Quanly.SignUp.resources

@@ -274,7 +274,6 @@
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(354, 34);
             this.txtID.TabIndex = 1;
-            this.txtID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtID_KeyPress);
             // 
             // AddProducts
             // 

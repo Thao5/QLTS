@@ -17,10 +17,10 @@ namespace GUI_Quanly
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public taikhoan()
         {
+            this.codes = new HashSet<code>();
             this.sachduocmuas = new HashSet<sachduocmua>();
             this.sachduocthues = new HashSet<sachduocthue>();
             this.sachthuoctacgias = new HashSet<sachthuoctacgia>();
-            this.codes = new HashSet<code>();
         }
     
         public string id { get; set; }
@@ -33,12 +33,12 @@ namespace GUI_Quanly
         public int phanquyen { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<code> codes { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<sachduocmua> sachduocmuas { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<sachduocthue> sachduocthues { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<sachthuoctacgia> sachthuoctacgias { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<code> codes { get; set; }
     }
 }
