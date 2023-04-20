@@ -46,6 +46,7 @@
             this.dataGridProducts.RowTemplate.Height = 24;
             this.dataGridProducts.Size = new System.Drawing.Size(996, 703);
             this.dataGridProducts.TabIndex = 1;
+            this.dataGridProducts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridProducts_CellContentClick);
             // 
             // panel2
             // 
@@ -57,6 +58,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(996, 60);
             this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btnBuy
             // 

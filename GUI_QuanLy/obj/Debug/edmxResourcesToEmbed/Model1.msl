@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="quanlytiemsachModelStoreContainer" CdmEntityContainer="quanlytiemsachEntities5">
+    <EntitySetMapping Name="codes">
+      <EntityTypeMapping TypeName="quanlytiemsachModel.code">
+        <MappingFragment StoreEntitySet="code">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="valid" ColumnName="valid" />
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+          <ScalarProperty Name="ngaynap" ColumnName="ngaynap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NXBs">
+      <EntityTypeMapping TypeName="quanlytiemsachModel.NXB">
+        <MappingFragment StoreEntitySet="NXB">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="saches">
+      <EntityTypeMapping TypeName="quanlytiemsachModel.sach">
+        <MappingFragment StoreEntitySet="sach">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="ngay_xuat_ban" ColumnName="ngay_xuat_ban" />
+          <ScalarProperty Name="gia_ban" ColumnName="gia_ban" />
+          <ScalarProperty Name="gia_thue" ColumnName="gia_thue" />
+          <ScalarProperty Name="so_luong" ColumnName="so_luong" />
+          <ScalarProperty Name="the_loai" ColumnName="the_loai" />
+          <ScalarProperty Name="gia_nhap" ColumnName="gia_nhap" />
+          <ScalarProperty Name="id_nxb" ColumnName="id_nxb" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sachduocmuas">
+      <EntityTypeMapping TypeName="quanlytiemsachModel.sachduocmua">
+        <MappingFragment StoreEntitySet="sachduocmua">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="gia_ban" ColumnName="gia_ban" />
+          <ScalarProperty Name="created_date" ColumnName="created_date" />
+          <ScalarProperty Name="id_sach" ColumnName="id_sach" />
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sachduocthues">
+      <EntityTypeMapping TypeName="quanlytiemsachModel.sachduocthue">
+        <MappingFragment StoreEntitySet="sachduocthue">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ngay_thue" ColumnName="ngay_thue" />
+          <ScalarProperty Name="ngay_tra" ColumnName="ngay_tra" />
+          <ScalarProperty Name="gia_thue" ColumnName="gia_thue" />
+          <ScalarProperty Name="created_date" ColumnName="created_date" />
+          <ScalarProperty Name="id_sach" ColumnName="id_sach" />
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sachthuoctacgias">
+      <EntityTypeMapping TypeName="quanlytiemsachModel.sachthuoctacgia">
+        <MappingFragment StoreEntitySet="sachthuoctacgia">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_sach" ColumnName="id_sach" />
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="quanlytiemsachModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="taikhoans">
+      <EntityTypeMapping TypeName="quanlytiemsachModel.taikhoan">
+        <MappingFragment StoreEntitySet="taikhoan">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="ho" ColumnName="ho" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="ngaysinh" ColumnName="ngaysinh" />
+          <ScalarProperty Name="sotienconlai" ColumnName="sotienconlai" />
+          <ScalarProperty Name="phanquyen" ColumnName="phanquyen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

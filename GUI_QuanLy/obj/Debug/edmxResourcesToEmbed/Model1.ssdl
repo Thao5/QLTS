@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="quanlytiemsachModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="code">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="valid" Type="bit" Nullable="false" />
+    <Property Name="id_user" Type="varchar" MaxLength="8" />
+    <Property Name="ngaynap" Type="datetime" />
+  </EntityType>
+  <EntityType Name="NXB">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sach">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ngay_xuat_ban" Type="datetime" Nullable="false" />
+    <Property Name="gia_ban" Type="money" Nullable="false" />
+    <Property Name="gia_thue" Type="money" Nullable="false" />
+    <Property Name="so_luong" Type="int" Nullable="false" />
+    <Property Name="the_loai" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="gia_nhap" Type="money" Nullable="false" />
+    <Property Name="id_nxb" Type="varchar" MaxLength="8" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sachduocmua">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="gia_ban" Type="money" Nullable="false" />
+    <Property Name="created_date" Type="datetime" Nullable="false" />
+    <Property Name="id_sach" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="id_user" Type="varchar" MaxLength="8" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sachduocthue">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ngay_thue" Type="datetime" Nullable="false" />
+    <Property Name="ngay_tra" Type="datetime" />
+    <Property Name="gia_thue" Type="money" Nullable="false" />
+    <Property Name="created_date" Type="datetime" Nullable="false" />
+    <Property Name="id_sach" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="id_user" Type="varchar" MaxLength="8" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sachthuoctacgia">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_sach" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="id_user" Type="varchar" MaxLength="8" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="taikhoan">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="ho" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ten" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="ngaysinh" Type="datetime" Nullable="false" />
+    <Property Name="sotienconlai" Type="money" Nullable="false" />
+    <Property Name="phanquyen" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__code__id_user__04E4BC85">
+    <End Role="taikhoan" Type="Self.taikhoan" Multiplicity="0..1" />
+    <End Role="code" Type="Self.code" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="taikhoan">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="code">
+        <PropertyRef Name="id_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__sach__id_nxb__778AC167">
+    <End Role="NXB" Type="Self.NXB" Multiplicity="1" />
+    <End Role="sach" Type="Self.sach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NXB">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sach">
+        <PropertyRef Name="id_nxb" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__sachduocm__id_sa__7E37BEF6">
+    <End Role="sach" Type="Self.sach" Multiplicity="1" />
+    <End Role="sachduocmua" Type="Self.sachduocmua" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sach">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sachduocmua">
+        <PropertyRef Name="id_sach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__sachduocm__id_us__7F2BE32F">
+    <End Role="taikhoan" Type="Self.taikhoan" Multiplicity="1" />
+    <End Role="sachduocmua" Type="Self.sachduocmua" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="taikhoan">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sachduocmua">
+        <PropertyRef Name="id_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__sachduoct__id_sa__7A672E12">
+    <End Role="sach" Type="Self.sach" Multiplicity="1" />
+    <End Role="sachduocthue" Type="Self.sachduocthue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sach">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sachduocthue">
+        <PropertyRef Name="id_sach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__sachduoct__id_us__7B5B524B">
+    <End Role="taikhoan" Type="Self.taikhoan" Multiplicity="1" />
+    <End Role="sachduocthue" Type="Self.sachduocthue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="taikhoan">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sachduocthue">
+        <PropertyRef Name="id_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__sachthuoc__id_sa__02084FDA">
+    <End Role="sach" Type="Self.sach" Multiplicity="1" />
+    <End Role="sachthuoctacgia" Type="Self.sachthuoctacgia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sach">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sachthuoctacgia">
+        <PropertyRef Name="id_sach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__sachthuoc__id_us__02FC7413">
+    <End Role="taikhoan" Type="Self.taikhoan" Multiplicity="1" />
+    <End Role="sachthuoctacgia" Type="Self.sachthuoctacgia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="taikhoan">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="sachthuoctacgia">
+        <PropertyRef Name="id_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="quanlytiemsachModelStoreContainer">
+    <EntitySet Name="code" EntityType="Self.code" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NXB" EntityType="Self.NXB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sach" EntityType="Self.sach" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sachduocmua" EntityType="Self.sachduocmua" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sachduocthue" EntityType="Self.sachduocthue" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sachthuoctacgia" EntityType="Self.sachthuoctacgia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="taikhoan" EntityType="Self.taikhoan" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__code__id_user__04E4BC85" Association="Self.FK__code__id_user__04E4BC85">
+      <End Role="taikhoan" EntitySet="taikhoan" />
+      <End Role="code" EntitySet="code" />
+    </AssociationSet>
+    <AssociationSet Name="FK__sach__id_nxb__778AC167" Association="Self.FK__sach__id_nxb__778AC167">
+      <End Role="NXB" EntitySet="NXB" />
+      <End Role="sach" EntitySet="sach" />
+    </AssociationSet>
+    <AssociationSet Name="FK__sachduocm__id_sa__7E37BEF6" Association="Self.FK__sachduocm__id_sa__7E37BEF6">
+      <End Role="sach" EntitySet="sach" />
+      <End Role="sachduocmua" EntitySet="sachduocmua" />
+    </AssociationSet>
+    <AssociationSet Name="FK__sachduocm__id_us__7F2BE32F" Association="Self.FK__sachduocm__id_us__7F2BE32F">
+      <End Role="taikhoan" EntitySet="taikhoan" />
+      <End Role="sachduocmua" EntitySet="sachduocmua" />
+    </AssociationSet>
+    <AssociationSet Name="FK__sachduoct__id_sa__7A672E12" Association="Self.FK__sachduoct__id_sa__7A672E12">
+      <End Role="sach" EntitySet="sach" />
+      <End Role="sachduocthue" EntitySet="sachduocthue" />
+    </AssociationSet>
+    <AssociationSet Name="FK__sachduoct__id_us__7B5B524B" Association="Self.FK__sachduoct__id_us__7B5B524B">
+      <End Role="taikhoan" EntitySet="taikhoan" />
+      <End Role="sachduocthue" EntitySet="sachduocthue" />
+    </AssociationSet>
+    <AssociationSet Name="FK__sachthuoc__id_sa__02084FDA" Association="Self.FK__sachthuoc__id_sa__02084FDA">
+      <End Role="sach" EntitySet="sach" />
+      <End Role="sachthuoctacgia" EntitySet="sachthuoctacgia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__sachthuoc__id_us__02FC7413" Association="Self.FK__sachthuoc__id_us__02FC7413">
+      <End Role="taikhoan" EntitySet="taikhoan" />
+      <End Role="sachthuoctacgia" EntitySet="sachthuoctacgia" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

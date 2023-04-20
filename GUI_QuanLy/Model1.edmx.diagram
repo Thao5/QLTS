@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="664b3a2ff0b2401bb8bee9397c7a78a9" Name="Diagram1">
+        <EntityTypeShape EntityType="quanlytiemsachModel.code" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytiemsachModel.NXB" Width="1.5" PointX="1.5" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytiemsachModel.sach" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytiemsachModel.sachduocmua" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytiemsachModel.sachduocthue" Width="1.5" PointX="6" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytiemsachModel.sachthuoctacgia" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytiemsachModel.sysdiagram" Width="1.5" PointX="5.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlytiemsachModel.taikhoan" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <AssociationConnector Association="quanlytiemsachModel.FK__code__id_user__04E4BC85" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlytiemsachModel.FK__sach__id_nxb__778AC167" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlytiemsachModel.FK__sachduocm__id_sa__7E37BEF6" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlytiemsachModel.FK__sachduoct__id_sa__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlytiemsachModel.FK__sachthuoc__id_sa__02084FDA" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlytiemsachModel.FK__sachduocm__id_us__7F2BE32F" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlytiemsachModel.FK__sachduoct__id_us__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlytiemsachModel.FK__sachthuoc__id_us__02FC7413" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

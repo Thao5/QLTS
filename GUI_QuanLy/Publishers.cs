@@ -12,9 +12,21 @@ namespace GUI_Quanly
 {
     public partial class Publishers : Form
     {
+        quanlytiemsachEntities3 db = new quanlytiemsachEntities3();
         public Publishers()
         {
             InitializeComponent();
+        }
+
+        private void Publishers_Load(object sender, EventArgs e)
+        {
+            view();
+        }
+
+        void view()
+        {
+            var test = from s in db.NXBs select new { id = s.id, name = s.name};
+            dataGridPublishers.DataSource = test.ToList();
         }
     }
 }
