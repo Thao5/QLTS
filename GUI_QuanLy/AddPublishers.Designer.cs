@@ -30,10 +30,10 @@
         {
             this.btnCancelPublisher = new System.Windows.Forms.Button();
             this.btnSavePublisher = new System.Windows.Forms.Button();
-            this.txtTenSach = new System.Windows.Forms.TextBox();
+            this.txtNXB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCancelPublisher
@@ -68,14 +68,14 @@
             this.btnSavePublisher.UseVisualStyleBackColor = false;
             this.btnSavePublisher.Click += new System.EventHandler(this.btnSavePublisher_Click);
             // 
-            // txtTenSach
+            // txtNXB
             // 
-            this.txtTenSach.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTenSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenSach.Location = new System.Drawing.Point(310, 214);
-            this.txtTenSach.Name = "txtTenSach";
-            this.txtTenSach.Size = new System.Drawing.Size(354, 34);
-            this.txtTenSach.TabIndex = 17;
+            this.txtNXB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNXB.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNXB.Location = new System.Drawing.Point(310, 214);
+            this.txtNXB.Name = "txtNXB";
+            this.txtNXB.Size = new System.Drawing.Size(354, 34);
+            this.txtNXB.TabIndex = 17;
             // 
             // label1
             // 
@@ -88,34 +88,36 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Tên Nhà Xuất Bản:";
             // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(140, 174);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(164, 25);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "ID Nhà Xuất Bản:";
+            // 
             // txtID
             // 
+            this.txtID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(310, 162);
+            this.txtID.Location = new System.Drawing.Point(310, 165);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(354, 34);
-            this.txtID.TabIndex = 33;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(149, 171);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(155, 25);
-            this.label10.TabIndex = 32;
-            this.label10.Text = "ID nhà xuất bản:";
+            this.txtID.TabIndex = 17;
             // 
             // AddPublishers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 579);
-            this.Controls.Add(this.txtID);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.btnCancelPublisher);
             this.Controls.Add(this.btnSavePublisher);
-            this.Controls.Add(this.txtTenSach);
+            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.txtNXB);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AddPublishers";
             this.Text = "AddPublishers";
@@ -128,9 +130,9 @@
 
         private System.Windows.Forms.Button btnCancelPublisher;
         private System.Windows.Forms.Button btnSavePublisher;
-        private System.Windows.Forms.TextBox txtTenSach;
+        private System.Windows.Forms.TextBox txtNXB;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.Label label10;
     }
 }

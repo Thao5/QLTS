@@ -32,8 +32,6 @@
             this.cbTrangThaiCard = new System.Windows.Forms.ComboBox();
             this.btnCancelCards = new System.Windows.Forms.Button();
             this.btnSaveCards = new System.Windows.Forms.Button();
-            this.txtGiaTien = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,6 +54,9 @@
             // 
             this.cbTrangThaiCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTrangThaiCard.FormattingEnabled = true;
+            this.cbTrangThaiCard.Items.AddRange(new object[] {
+            "true",
+            "false"});
             this.cbTrangThaiCard.Location = new System.Drawing.Point(285, 98);
             this.cbTrangThaiCard.Name = "cbTrangThaiCard";
             this.cbTrangThaiCard.Size = new System.Drawing.Size(354, 37);
@@ -93,25 +94,6 @@
             this.btnSaveCards.Text = "Save";
             this.btnSaveCards.UseVisualStyleBackColor = false;
             this.btnSaveCards.Click += new System.EventHandler(this.btnSaveCards_Click);
-            // 
-            // txtGiaTien
-            // 
-            this.txtGiaTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGiaTien.Location = new System.Drawing.Point(285, 272);
-            this.txtGiaTien.Name = "txtGiaTien";
-            this.txtGiaTien.Size = new System.Drawing.Size(354, 34);
-            this.txtGiaTien.TabIndex = 45;
-            this.txtGiaTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoTien_KeyPress);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(192, 281);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 25);
-            this.label7.TabIndex = 44;
-            this.label7.Text = "Giá Tiền:";
             // 
             // label4
             // 
@@ -181,8 +163,6 @@
             this.Controls.Add(this.cbTrangThaiCard);
             this.Controls.Add(this.btnCancelCards);
             this.Controls.Add(this.btnSaveCards);
-            this.Controls.Add(this.txtGiaTien);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -190,6 +170,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AddCards";
             this.Text = "AddCards";
+            this.Load += new System.EventHandler(this.AddCards_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,8 +182,6 @@
         private System.Windows.Forms.ComboBox cbTrangThaiCard;
         private System.Windows.Forms.Button btnCancelCards;
         private System.Windows.Forms.Button btnSaveCards;
-        private System.Windows.Forms.TextBox txtGiaTien;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

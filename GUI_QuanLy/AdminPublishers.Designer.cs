@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnUpdatePublishers = new System.Windows.Forms.Button();
             this.btnAddPublishers = new System.Windows.Forms.Button();
             this.btnDeletePublishers = new System.Windows.Forms.Button();
             this.btnEditPublishers = new System.Windows.Forms.Button();
             this.dataGridAdminPublishers = new System.Windows.Forms.DataGridView();
-            this.btnUpdatePublishers = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAdminPublishers)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +50,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1027, 60);
             this.panel2.TabIndex = 7;
+            // 
+            // btnUpdatePublishers
+            // 
+            this.btnUpdatePublishers.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUpdatePublishers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
+            this.btnUpdatePublishers.FlatAppearance.BorderSize = 0;
+            this.btnUpdatePublishers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdatePublishers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdatePublishers.ForeColor = System.Drawing.Color.White;
+            this.btnUpdatePublishers.Location = new System.Drawing.Point(460, 10);
+            this.btnUpdatePublishers.Name = "btnUpdatePublishers";
+            this.btnUpdatePublishers.Size = new System.Drawing.Size(106, 40);
+            this.btnUpdatePublishers.TabIndex = 32;
+            this.btnUpdatePublishers.Text = "Update";
+            this.btnUpdatePublishers.UseVisualStyleBackColor = false;
             // 
             // btnAddPublishers
             // 
@@ -81,6 +96,7 @@
             this.btnDeletePublishers.TabIndex = 1;
             this.btnDeletePublishers.Text = "Delete";
             this.btnDeletePublishers.UseVisualStyleBackColor = false;
+            this.btnDeletePublishers.Click += new System.EventHandler(this.btnDeletePublishers_Click);
             // 
             // btnEditPublishers
             // 
@@ -108,21 +124,6 @@
             this.dataGridAdminPublishers.Size = new System.Drawing.Size(1027, 677);
             this.dataGridAdminPublishers.TabIndex = 8;
             // 
-            // btnUpdatePublishers
-            // 
-            this.btnUpdatePublishers.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdatePublishers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
-            this.btnUpdatePublishers.FlatAppearance.BorderSize = 0;
-            this.btnUpdatePublishers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdatePublishers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdatePublishers.ForeColor = System.Drawing.Color.White;
-            this.btnUpdatePublishers.Location = new System.Drawing.Point(460, 10);
-            this.btnUpdatePublishers.Name = "btnUpdatePublishers";
-            this.btnUpdatePublishers.Size = new System.Drawing.Size(106, 40);
-            this.btnUpdatePublishers.TabIndex = 32;
-            this.btnUpdatePublishers.Text = "Update";
-            this.btnUpdatePublishers.UseVisualStyleBackColor = false;
-            // 
             // AdminPublishers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -132,6 +133,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "AdminPublishers";
             this.Text = "AdminPublishers";
+            this.Load += new System.EventHandler(this.AdminPublishers_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAdminPublishers)).EndInit();
             this.ResumeLayout(false);

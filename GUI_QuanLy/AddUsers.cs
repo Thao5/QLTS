@@ -15,9 +15,6 @@ namespace GUI_Quanly
         public AddUsers()
         {
             InitializeComponent();
-            List<String> userType = new List<String>() { "Admin", "User", "Author" };
-            cbLoaiNguoiDung.DataSource = userType;
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -27,7 +24,17 @@ namespace GUI_Quanly
 
         private void btnSaveUsers_Click(object sender, EventArgs e)
         {
+            themUser(txtID.Text, txtUserName.Text, txtPassword.Text, txtHo.Text, txtTen.Text, DateTime.ParseExact(dateNgaySinh.Text, "dd/MM/yyyy", null), decimal.Parse(txtSoTien.Text), cbLoaiNguoiDung.SelectedIndex);
             this.Close();
+        }
+
+        void themUser(String id,  String username, String password, String ho, String ten, DateTime ngaysinh, decimal sotienconlai, int phanquyen)
+        {
+            using(quanlytiemsachEntities3 db = new quanlytiemsachEntities3())
+            {
+                db.taikhoans.Add(new taikhoan() { id = id, username = username, password = password, ho = ho, ten = ten, ngaysinh = ngaysinh, sotienconlai = sotienconlai, phanquyen = phanquyen });
+                db.SaveChanges();
+            }
         }
 
         private void btnCancelUsers_Click(object sender, EventArgs e)
@@ -44,11 +51,6 @@ namespace GUI_Quanly
         }
 
         private void txtSoTien_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbLoaiNguoiDung_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

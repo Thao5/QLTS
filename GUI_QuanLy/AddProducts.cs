@@ -125,10 +125,5 @@ namespace GUI_Quanly
 
 
         }
-
-        private void txtID_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
     }
 }

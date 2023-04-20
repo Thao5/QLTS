@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnUpdateBorrowOrders = new System.Windows.Forms.Button();
             this.btnAddBorrowOrders = new System.Windows.Forms.Button();
             this.btnDeleteBorrowOrders = new System.Windows.Forms.Button();
             this.btnEditBorrowOrders = new System.Windows.Forms.Button();
             this.dataGridAdminBorrow = new System.Windows.Forms.DataGridView();
-            this.btnUpdateBorrowOrders = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAdminBorrow)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +50,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(975, 60);
             this.panel2.TabIndex = 4;
+            // 
+            // btnUpdateBorrowOrders
+            // 
+            this.btnUpdateBorrowOrders.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUpdateBorrowOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
+            this.btnUpdateBorrowOrders.FlatAppearance.BorderSize = 0;
+            this.btnUpdateBorrowOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateBorrowOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateBorrowOrders.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateBorrowOrders.Location = new System.Drawing.Point(434, 10);
+            this.btnUpdateBorrowOrders.Name = "btnUpdateBorrowOrders";
+            this.btnUpdateBorrowOrders.Size = new System.Drawing.Size(106, 40);
+            this.btnUpdateBorrowOrders.TabIndex = 32;
+            this.btnUpdateBorrowOrders.Text = "Update";
+            this.btnUpdateBorrowOrders.UseVisualStyleBackColor = false;
             // 
             // btnAddBorrowOrders
             // 
@@ -81,6 +96,7 @@
             this.btnDeleteBorrowOrders.TabIndex = 1;
             this.btnDeleteBorrowOrders.Text = "Delete";
             this.btnDeleteBorrowOrders.UseVisualStyleBackColor = false;
+            this.btnDeleteBorrowOrders.Click += new System.EventHandler(this.btnDeleteBorrowOrders_Click);
             // 
             // btnEditBorrowOrders
             // 
@@ -108,21 +124,6 @@
             this.dataGridAdminBorrow.Size = new System.Drawing.Size(975, 667);
             this.dataGridAdminBorrow.TabIndex = 5;
             // 
-            // btnUpdateBorrowOrders
-            // 
-            this.btnUpdateBorrowOrders.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdateBorrowOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
-            this.btnUpdateBorrowOrders.FlatAppearance.BorderSize = 0;
-            this.btnUpdateBorrowOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateBorrowOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateBorrowOrders.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateBorrowOrders.Location = new System.Drawing.Point(434, 10);
-            this.btnUpdateBorrowOrders.Name = "btnUpdateBorrowOrders";
-            this.btnUpdateBorrowOrders.Size = new System.Drawing.Size(106, 40);
-            this.btnUpdateBorrowOrders.TabIndex = 32;
-            this.btnUpdateBorrowOrders.Text = "Update";
-            this.btnUpdateBorrowOrders.UseVisualStyleBackColor = false;
-            // 
             // AdminBorrowOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -132,6 +133,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "AdminBorrowOrders";
             this.Text = "AdminBorrowOrders";
+            this.Load += new System.EventHandler(this.AdminBorrowOrders_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAdminBorrow)).EndInit();
             this.ResumeLayout(false);

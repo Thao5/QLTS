@@ -34,8 +34,6 @@
             this.btnCancelBuy = new System.Windows.Forms.Button();
             this.btnSaveBuy = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cbNguoiMua
@@ -108,31 +106,11 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "Tên Sách:";
             // 
-            // txtID
-            // 
-            this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(260, 106);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(354, 34);
-            this.txtID.TabIndex = 51;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(172, 115);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(81, 25);
-            this.label10.TabIndex = 50;
-            this.label10.Text = "ID Mua:";
-            // 
             // AddBuyOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 719);
-            this.Controls.Add(this.txtID);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.cbNguoiMua);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.cbTenSachBuy);
@@ -155,7 +133,5 @@
         private System.Windows.Forms.Button btnCancelBuy;
         private System.Windows.Forms.Button btnSaveBuy;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.Label label10;
     }
 }

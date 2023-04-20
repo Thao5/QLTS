@@ -22,5 +22,34 @@ namespace GUI_Quanly
             AddCards addCards = new AddCards();
             addCards.Show();
         }
+
+        private void AdminCards_Load(object sender, EventArgs e)
+        {
+            loadData();
+        }
+
+        void loadData()
+        {
+            using(quanlytiemsachEntities3 db = new quanlytiemsachEntities3())
+            {
+                var test = from s in db.codes select new { id = s.id, valid = s.valid, user = s.taikhoan.ten, ngaynap = s.ngaynap};
+                dataGridAdminCards.DataSource = test.ToList();
+            }
+        }
+
+        private void btnDeleteCards_Click(object sender, EventArgs e)
+        {
+            if (dataGridAdminCards.SelectedRows.Count > 0)
+            {
+                using (quanlytiemsachEntities3 db = new quanlytiemsachEntities3())
+                {
+                    DataGridViewRow row = dataGridAdminCards.SelectedRows[0];
+                    String ID = Convert.ToString(row.Cells[0].Value.ToString());
+                    db.codes.Remove(db.codes.Find(ID));
+                    db.SaveChanges();
+                    loadData();
+                }
+            }
+        }
     }
 }

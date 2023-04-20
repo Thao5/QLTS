@@ -5,12 +5,9 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="quanlytiemsachModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'quanlytiemsach.dbo.code' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="code">
           <Key>
             <PropertyRef Name="id" />
-            <PropertyRef Name="valid" />
           </Key>
           <Property Name="id" Type="varchar" MaxLength="8" Nullable="false" />
           <Property Name="valid" Type="bit" Nullable="false" />
@@ -188,6 +185,7 @@ warning 6002: The table/view 'quanlytiemsach.dbo.code' does not have a primary k
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="quanlytiemsachModelStoreContainer">
+          <EntitySet Name="code" EntityType="Self.code" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NXB" EntityType="Self.NXB" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sach" EntityType="Self.sach" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sachduocmua" EntityType="Self.sachduocmua" Schema="dbo" store:Type="Tables" />
@@ -195,14 +193,6 @@ warning 6002: The table/view 'quanlytiemsach.dbo.code' does not have a primary k
           <EntitySet Name="sachthuoctacgia" EntityType="Self.sachthuoctacgia" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="taikhoan" EntityType="Self.taikhoan" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="code" EntityType="Self.code" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [code].[id] AS [id], 
-    [code].[valid] AS [valid], 
-    [code].[id_user] AS [id_user], 
-    [code].[ngaynap] AS [ngaynap]
-    FROM [dbo].[code] AS [code]</DefiningQuery>
-          </EntitySet>
           <AssociationSet Name="FK__code__id_user__04E4BC85" Association="Self.FK__code__id_user__04E4BC85">
             <End Role="taikhoan" EntitySet="taikhoan" />
             <End Role="code" EntitySet="code" />
@@ -241,6 +231,16 @@ warning 6002: The table/view 'quanlytiemsach.dbo.code' does not have a primary k
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="quanlytiemsachModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="code">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="valid" Type="Boolean" Nullable="false" />
+          <Property Name="id_user" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="ngaynap" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="taikhoan" Relationship="Self.FK__code__id_user__04E4BC85" FromRole="code" ToRole="taikhoan" />
+        </EntityType>
         <EntityType Name="NXB">
           <Key>
             <PropertyRef Name="id" />
@@ -325,22 +325,23 @@ warning 6002: The table/view 'quanlytiemsach.dbo.code' does not have a primary k
           <Property Name="ngaysinh" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="sotienconlai" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="phanquyen" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="codes" Relationship="Self.FK__code__id_user__04E4BC85" FromRole="taikhoan" ToRole="code" />
           <NavigationProperty Name="sachduocmuas" Relationship="Self.FK__sachduocm__id_us__7F2BE32F" FromRole="taikhoan" ToRole="sachduocmua" />
           <NavigationProperty Name="sachduocthues" Relationship="Self.FK__sachduoct__id_us__7B5B524B" FromRole="taikhoan" ToRole="sachduocthue" />
           <NavigationProperty Name="sachthuoctacgias" Relationship="Self.FK__sachthuoc__id_us__02FC7413" FromRole="taikhoan" ToRole="sachthuoctacgia" />
-          <NavigationProperty Name="codes" Relationship="Self.FK__code__id_user__04E4BC85" FromRole="taikhoan" ToRole="code" />
         </EntityType>
-        <EntityType Name="code">
-          <Key>
-            <PropertyRef Name="id" />
-            <PropertyRef Name="valid" />
-          </Key>
-          <Property Name="id" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="valid" Type="Boolean" Nullable="false" />
-          <Property Name="id_user" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
-          <Property Name="ngaynap" Type="DateTime" Precision="3" />
-          <NavigationProperty Name="taikhoan" Relationship="Self.FK__code__id_user__04E4BC85" FromRole="code" ToRole="taikhoan" />
-        </EntityType>
+        <Association Name="FK__code__id_user__04E4BC85">
+          <End Role="taikhoan" Type="Self.taikhoan" Multiplicity="0..1" />
+          <End Role="code" Type="Self.code" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="taikhoan">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="code">
+              <PropertyRef Name="id_user" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK__sach__id_nxb__778AC167">
           <End Role="NXB" Type="Self.NXB" Multiplicity="1" />
           <End Role="sach" Type="Self.sach" Multiplicity="*" />
@@ -425,19 +426,8 @@ warning 6002: The table/view 'quanlytiemsach.dbo.code' does not have a primary k
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__code__id_user__04E4BC85">
-          <End Role="taikhoan" Type="Self.taikhoan" Multiplicity="0..1" />
-          <End Role="code" Type="Self.code" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="taikhoan">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="code">
-              <PropertyRef Name="id_user" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="quanlytiemsachEntities3" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="codes" EntityType="Self.code" />
           <EntitySet Name="NXBs" EntityType="Self.NXB" />
           <EntitySet Name="saches" EntityType="Self.sach" />
           <EntitySet Name="sachduocmuas" EntityType="Self.sachduocmua" />
@@ -445,7 +435,10 @@ warning 6002: The table/view 'quanlytiemsach.dbo.code' does not have a primary k
           <EntitySet Name="sachthuoctacgias" EntityType="Self.sachthuoctacgia" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
           <EntitySet Name="taikhoans" EntityType="Self.taikhoan" />
-          <EntitySet Name="codes" EntityType="Self.code" />
+          <AssociationSet Name="FK__code__id_user__04E4BC85" Association="Self.FK__code__id_user__04E4BC85">
+            <End Role="taikhoan" EntitySet="taikhoans" />
+            <End Role="code" EntitySet="codes" />
+          </AssociationSet>
           <AssociationSet Name="FK__sach__id_nxb__778AC167" Association="Self.FK__sach__id_nxb__778AC167">
             <End Role="NXB" EntitySet="NXBs" />
             <End Role="sach" EntitySet="saches" />
@@ -474,10 +467,6 @@ warning 6002: The table/view 'quanlytiemsach.dbo.code' does not have a primary k
             <End Role="taikhoan" EntitySet="taikhoans" />
             <End Role="sachthuoctacgia" EntitySet="sachthuoctacgias" />
           </AssociationSet>
-          <AssociationSet Name="FK__code__id_user__04E4BC85" Association="Self.FK__code__id_user__04E4BC85">
-            <End Role="taikhoan" EntitySet="taikhoans" />
-            <End Role="code" EntitySet="codes" />
-          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -485,6 +474,16 @@ warning 6002: The table/view 'quanlytiemsach.dbo.code' does not have a primary k
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="quanlytiemsachModelStoreContainer" CdmEntityContainer="quanlytiemsachEntities3">
+          <EntitySetMapping Name="codes">
+            <EntityTypeMapping TypeName="quanlytiemsachModel.code">
+              <MappingFragment StoreEntitySet="code">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="valid" ColumnName="valid" />
+                <ScalarProperty Name="id_user" ColumnName="id_user" />
+                <ScalarProperty Name="ngaynap" ColumnName="ngaynap" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="NXBs">
             <EntityTypeMapping TypeName="quanlytiemsachModel.NXB">
               <MappingFragment StoreEntitySet="NXB">
@@ -563,16 +562,6 @@ warning 6002: The table/view 'quanlytiemsach.dbo.code' does not have a primary k
                 <ScalarProperty Name="ngaysinh" ColumnName="ngaysinh" />
                 <ScalarProperty Name="sotienconlai" ColumnName="sotienconlai" />
                 <ScalarProperty Name="phanquyen" ColumnName="phanquyen" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="codes">
-            <EntityTypeMapping TypeName="quanlytiemsachModel.code">
-              <MappingFragment StoreEntitySet="code">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="valid" ColumnName="valid" />
-                <ScalarProperty Name="id_user" ColumnName="id_user" />
-                <ScalarProperty Name="ngaynap" ColumnName="ngaynap" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

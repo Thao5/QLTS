@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnUpdateUser = new System.Windows.Forms.Button();
             this.btnAddUsers = new System.Windows.Forms.Button();
             this.btnDeleteUsers = new System.Windows.Forms.Button();
             this.btnEditUsers = new System.Windows.Forms.Button();
             this.dataGridAdminUsers = new System.Windows.Forms.DataGridView();
-            this.btnUpdateUser = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAdminUsers)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +50,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1042, 60);
             this.panel2.TabIndex = 8;
+            // 
+            // btnUpdateUser
+            // 
+            this.btnUpdateUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUpdateUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
+            this.btnUpdateUser.FlatAppearance.BorderSize = 0;
+            this.btnUpdateUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateUser.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateUser.Location = new System.Drawing.Point(468, 10);
+            this.btnUpdateUser.Name = "btnUpdateUser";
+            this.btnUpdateUser.Size = new System.Drawing.Size(106, 40);
+            this.btnUpdateUser.TabIndex = 32;
+            this.btnUpdateUser.Text = "Update";
+            this.btnUpdateUser.UseVisualStyleBackColor = false;
             // 
             // btnAddUsers
             // 
@@ -81,6 +96,7 @@
             this.btnDeleteUsers.TabIndex = 1;
             this.btnDeleteUsers.Text = "Delete";
             this.btnDeleteUsers.UseVisualStyleBackColor = false;
+            this.btnDeleteUsers.Click += new System.EventHandler(this.btnDeleteUsers_Click);
             // 
             // btnEditUsers
             // 
@@ -108,21 +124,6 @@
             this.dataGridAdminUsers.Size = new System.Drawing.Size(1042, 669);
             this.dataGridAdminUsers.TabIndex = 9;
             // 
-            // btnUpdateUser
-            // 
-            this.btnUpdateUser.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdateUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
-            this.btnUpdateUser.FlatAppearance.BorderSize = 0;
-            this.btnUpdateUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateUser.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateUser.Location = new System.Drawing.Point(468, 10);
-            this.btnUpdateUser.Name = "btnUpdateUser";
-            this.btnUpdateUser.Size = new System.Drawing.Size(106, 40);
-            this.btnUpdateUser.TabIndex = 32;
-            this.btnUpdateUser.Text = "Update";
-            this.btnUpdateUser.UseVisualStyleBackColor = false;
-            // 
             // AdminUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -132,6 +133,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "AdminUsers";
             this.Text = "AdminUsers";
+            this.Load += new System.EventHandler(this.AdminUsers_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAdminUsers)).EndInit();
             this.ResumeLayout(false);

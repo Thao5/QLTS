@@ -1,6 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="quanlytiemsachModelStoreContainer" CdmEntityContainer="quanlytiemsachEntities3">
+    <EntitySetMapping Name="codes">
+      <EntityTypeMapping TypeName="quanlytiemsachModel.code">
+        <MappingFragment StoreEntitySet="code">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="valid" ColumnName="valid" />
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+          <ScalarProperty Name="ngaynap" ColumnName="ngaynap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="NXBs">
       <EntityTypeMapping TypeName="quanlytiemsachModel.NXB">
         <MappingFragment StoreEntitySet="NXB">
@@ -79,16 +89,6 @@
           <ScalarProperty Name="ngaysinh" ColumnName="ngaysinh" />
           <ScalarProperty Name="sotienconlai" ColumnName="sotienconlai" />
           <ScalarProperty Name="phanquyen" ColumnName="phanquyen" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="codes">
-      <EntityTypeMapping TypeName="quanlytiemsachModel.code">
-        <MappingFragment StoreEntitySet="code">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="valid" ColumnName="valid" />
-          <ScalarProperty Name="id_user" ColumnName="id_user" />
-          <ScalarProperty Name="ngaynap" ColumnName="ngaynap" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

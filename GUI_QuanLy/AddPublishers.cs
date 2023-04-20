@@ -24,7 +24,17 @@ namespace GUI_Quanly
 
         private void btnSavePublisher_Click(object sender, EventArgs e)
         {
+            themNXB(txtID.Text, txtNXB.Text);
             this.Close();
+        }
+
+        void themNXB(String id,  String name)
+        {
+            using(quanlytiemsachEntities3 db = new quanlytiemsachEntities3())
+            {
+                db.NXBs.Add(new NXB() { id = id, name = name });
+                db.SaveChanges();
+            }
         }
     }
 }

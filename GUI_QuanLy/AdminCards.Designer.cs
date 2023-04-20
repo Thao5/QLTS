@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnUpdateCards = new System.Windows.Forms.Button();
             this.btnAddCards = new System.Windows.Forms.Button();
             this.btnDeleteCards = new System.Windows.Forms.Button();
             this.btnEditCards = new System.Windows.Forms.Button();
             this.dataGridAdminCards = new System.Windows.Forms.DataGridView();
-            this.btnUpdateCards = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAdminCards)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +50,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1042, 60);
             this.panel2.TabIndex = 9;
+            // 
+            // btnUpdateCards
+            // 
+            this.btnUpdateCards.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUpdateCards.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
+            this.btnUpdateCards.FlatAppearance.BorderSize = 0;
+            this.btnUpdateCards.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateCards.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateCards.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateCards.Location = new System.Drawing.Point(477, 10);
+            this.btnUpdateCards.Name = "btnUpdateCards";
+            this.btnUpdateCards.Size = new System.Drawing.Size(106, 40);
+            this.btnUpdateCards.TabIndex = 32;
+            this.btnUpdateCards.Text = "Update";
+            this.btnUpdateCards.UseVisualStyleBackColor = false;
             // 
             // btnAddCards
             // 
@@ -81,6 +96,7 @@
             this.btnDeleteCards.TabIndex = 1;
             this.btnDeleteCards.Text = "Delete";
             this.btnDeleteCards.UseVisualStyleBackColor = false;
+            this.btnDeleteCards.Click += new System.EventHandler(this.btnDeleteCards_Click);
             // 
             // btnEditCards
             // 
@@ -108,21 +124,6 @@
             this.dataGridAdminCards.Size = new System.Drawing.Size(1042, 675);
             this.dataGridAdminCards.TabIndex = 10;
             // 
-            // btnUpdateCards
-            // 
-            this.btnUpdateCards.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdateCards.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
-            this.btnUpdateCards.FlatAppearance.BorderSize = 0;
-            this.btnUpdateCards.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateCards.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateCards.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateCards.Location = new System.Drawing.Point(477, 10);
-            this.btnUpdateCards.Name = "btnUpdateCards";
-            this.btnUpdateCards.Size = new System.Drawing.Size(106, 40);
-            this.btnUpdateCards.TabIndex = 32;
-            this.btnUpdateCards.Text = "Update";
-            this.btnUpdateCards.UseVisualStyleBackColor = false;
-            // 
             // AdminCards
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -132,6 +133,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "AdminCards";
             this.Text = "AdminCards";
+            this.Load += new System.EventHandler(this.AdminCards_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAdminCards)).EndInit();
             this.ResumeLayout(false);
