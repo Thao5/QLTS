@@ -195,7 +195,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="quanlytiemsachEntities3" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="quanlytiemsachEntities5" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="codes" EntityType="Self.code" />
     <EntitySet Name="NXBs" EntityType="Self.NXB" />
     <EntitySet Name="saches" EntityType="Self.sach" />
