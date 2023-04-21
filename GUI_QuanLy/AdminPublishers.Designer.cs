@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnUpdatePublishers = new System.Windows.Forms.Button();
             this.btnAddPublishers = new System.Windows.Forms.Button();
             this.btnDeletePublishers = new System.Windows.Forms.Button();
             this.btnEditPublishers = new System.Windows.Forms.Button();
@@ -41,7 +40,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightGray;
-            this.panel2.Controls.Add(this.btnUpdatePublishers);
             this.panel2.Controls.Add(this.btnAddPublishers);
             this.panel2.Controls.Add(this.btnDeletePublishers);
             this.panel2.Controls.Add(this.btnEditPublishers);
@@ -50,21 +48,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1027, 60);
             this.panel2.TabIndex = 7;
-            // 
-            // btnUpdatePublishers
-            // 
-            this.btnUpdatePublishers.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdatePublishers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
-            this.btnUpdatePublishers.FlatAppearance.BorderSize = 0;
-            this.btnUpdatePublishers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdatePublishers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdatePublishers.ForeColor = System.Drawing.Color.White;
-            this.btnUpdatePublishers.Location = new System.Drawing.Point(460, 10);
-            this.btnUpdatePublishers.Name = "btnUpdatePublishers";
-            this.btnUpdatePublishers.Size = new System.Drawing.Size(106, 40);
-            this.btnUpdatePublishers.TabIndex = 32;
-            this.btnUpdatePublishers.Text = "Update";
-            this.btnUpdatePublishers.UseVisualStyleBackColor = false;
             // 
             // btnAddPublishers
             // 
@@ -147,6 +130,5 @@
         private System.Windows.Forms.Button btnDeletePublishers;
         private System.Windows.Forms.Button btnEditPublishers;
         private System.Windows.Forms.DataGridView dataGridAdminPublishers;
-        private System.Windows.Forms.Button btnUpdatePublishers;
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnUpdateCards = new System.Windows.Forms.Button();
             this.btnAddCards = new System.Windows.Forms.Button();
             this.btnDeleteCards = new System.Windows.Forms.Button();
             this.btnEditCards = new System.Windows.Forms.Button();
@@ -41,7 +40,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightGray;
-            this.panel2.Controls.Add(this.btnUpdateCards);
             this.panel2.Controls.Add(this.btnAddCards);
             this.panel2.Controls.Add(this.btnDeleteCards);
             this.panel2.Controls.Add(this.btnEditCards);
@@ -50,21 +48,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1042, 60);
             this.panel2.TabIndex = 9;
-            // 
-            // btnUpdateCards
-            // 
-            this.btnUpdateCards.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdateCards.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
-            this.btnUpdateCards.FlatAppearance.BorderSize = 0;
-            this.btnUpdateCards.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateCards.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateCards.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateCards.Location = new System.Drawing.Point(477, 10);
-            this.btnUpdateCards.Name = "btnUpdateCards";
-            this.btnUpdateCards.Size = new System.Drawing.Size(106, 40);
-            this.btnUpdateCards.TabIndex = 32;
-            this.btnUpdateCards.Text = "Update";
-            this.btnUpdateCards.UseVisualStyleBackColor = false;
             // 
             // btnAddCards
             // 
@@ -147,6 +130,5 @@
         private System.Windows.Forms.Button btnDeleteCards;
         private System.Windows.Forms.Button btnEditCards;
         private System.Windows.Forms.DataGridView dataGridAdminCards;
-        private System.Windows.Forms.Button btnUpdateCards;
     }
 }

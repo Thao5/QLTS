@@ -30,7 +30,6 @@
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAddAuthors = new System.Windows.Forms.Button();
-            this.btnUpdateAuthors = new System.Windows.Forms.Button();
             this.btnDeleteAuthors = new System.Windows.Forms.Button();
             this.btnEditAuthors = new System.Windows.Forms.Button();
             this.dataGridAdminAuthors = new System.Windows.Forms.DataGridView();
@@ -42,7 +41,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.LightGray;
             this.panel2.Controls.Add(this.btnAddAuthors);
-            this.panel2.Controls.Add(this.btnUpdateAuthors);
             this.panel2.Controls.Add(this.btnDeleteAuthors);
             this.panel2.Controls.Add(this.btnEditAuthors);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -60,28 +58,13 @@
             this.btnAddAuthors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddAuthors.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddAuthors.ForeColor = System.Drawing.Color.White;
-            this.btnAddAuthors.Location = new System.Drawing.Point(368, 8);
+            this.btnAddAuthors.Location = new System.Drawing.Point(501, 8);
             this.btnAddAuthors.Name = "btnAddAuthors";
             this.btnAddAuthors.Size = new System.Drawing.Size(106, 40);
             this.btnAddAuthors.TabIndex = 31;
             this.btnAddAuthors.Text = "Add";
             this.btnAddAuthors.UseVisualStyleBackColor = false;
             this.btnAddAuthors.Click += new System.EventHandler(this.btnAddAuthors_Click);
-            // 
-            // btnUpdateAuthors
-            // 
-            this.btnUpdateAuthors.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdateAuthors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
-            this.btnUpdateAuthors.FlatAppearance.BorderSize = 0;
-            this.btnUpdateAuthors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateAuthors.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateAuthors.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateAuthors.Location = new System.Drawing.Point(497, 8);
-            this.btnUpdateAuthors.Name = "btnUpdateAuthors";
-            this.btnUpdateAuthors.Size = new System.Drawing.Size(106, 40);
-            this.btnUpdateAuthors.TabIndex = 31;
-            this.btnUpdateAuthors.Text = "Update";
-            this.btnUpdateAuthors.UseVisualStyleBackColor = false;
             // 
             // btnDeleteAuthors
             // 
@@ -147,7 +130,6 @@
         private System.Windows.Forms.Button btnDeleteAuthors;
         private System.Windows.Forms.Button btnEditAuthors;
         private System.Windows.Forms.DataGridView dataGridAdminAuthors;
-        private System.Windows.Forms.Button btnUpdateAuthors;
         private System.Windows.Forms.Button btnAddAuthors;
     }
 }

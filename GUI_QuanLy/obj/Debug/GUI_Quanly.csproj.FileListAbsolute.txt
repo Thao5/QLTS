@@ -159,3 +159,10 @@ D:\QLTS\GUI_QuanLy\obj\Debug\GUI_Quanly.csproj.CopyComplete
 D:\QLTS\GUI_QuanLy\obj\Debug\GUI_Quanly.AddAuthors.resources
 D:\QLTS\GUI_QuanLy\obj\Debug\GUI_Quanly.Login.resources
 D:\QLTS\GUI_QuanLy\obj\Debug\GUI_Quanly.SignUp.resources
+D:\QLTS\GUI_QuanLy\obj\Debug\GUI_Quanly.EditAuthors.resources
+D:\QLTS\GUI_QuanLy\obj\Debug\GUI_Quanly.EditBorrowOrders.resources
+D:\QLTS\GUI_QuanLy\obj\Debug\GUI_Quanly.EditBuyOrders.resources
+D:\QLTS\GUI_QuanLy\obj\Debug\GUI_Quanly.EditCards.resources
+D:\QLTS\GUI_QuanLy\obj\Debug\GUI_Quanly.EditProducts.resources
+D:\QLTS\GUI_QuanLy\obj\Debug\GUI_Quanly.EditPublishers.resources
+D:\QLTS\GUI_QuanLy\obj\Debug\GUI_Quanly.EditUsers.resources

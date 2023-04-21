@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnUpdateBorrowOrders = new System.Windows.Forms.Button();
             this.btnAddBorrowOrders = new System.Windows.Forms.Button();
             this.btnDeleteBorrowOrders = new System.Windows.Forms.Button();
             this.btnEditBorrowOrders = new System.Windows.Forms.Button();
@@ -41,7 +40,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightGray;
-            this.panel2.Controls.Add(this.btnUpdateBorrowOrders);
             this.panel2.Controls.Add(this.btnAddBorrowOrders);
             this.panel2.Controls.Add(this.btnDeleteBorrowOrders);
             this.panel2.Controls.Add(this.btnEditBorrowOrders);
@@ -50,21 +48,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(975, 60);
             this.panel2.TabIndex = 4;
-            // 
-            // btnUpdateBorrowOrders
-            // 
-            this.btnUpdateBorrowOrders.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdateBorrowOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
-            this.btnUpdateBorrowOrders.FlatAppearance.BorderSize = 0;
-            this.btnUpdateBorrowOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateBorrowOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateBorrowOrders.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateBorrowOrders.Location = new System.Drawing.Point(434, 10);
-            this.btnUpdateBorrowOrders.Name = "btnUpdateBorrowOrders";
-            this.btnUpdateBorrowOrders.Size = new System.Drawing.Size(106, 40);
-            this.btnUpdateBorrowOrders.TabIndex = 32;
-            this.btnUpdateBorrowOrders.Text = "Update";
-            this.btnUpdateBorrowOrders.UseVisualStyleBackColor = false;
             // 
             // btnAddBorrowOrders
             // 
@@ -147,6 +130,5 @@
         private System.Windows.Forms.Button btnDeleteBorrowOrders;
         private System.Windows.Forms.Button btnEditBorrowOrders;
         private System.Windows.Forms.DataGridView dataGridAdminBorrow;
-        private System.Windows.Forms.Button btnUpdateBorrowOrders;
     }
 }

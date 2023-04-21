@@ -175,6 +175,48 @@
     <Compile Include="code.cs">
       <DependentUpon>ModelQLTS.tt</DependentUpon>
     </Compile>
+    <Compile Include="EditAuthors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAuthors.Designer.cs">
+      <DependentUpon>EditAuthors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditBorrowOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditBorrowOrders.Designer.cs">
+      <DependentUpon>EditBorrowOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditBuyOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditBuyOrders.Designer.cs">
+      <DependentUpon>EditBuyOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCards.Designer.cs">
+      <DependentUpon>EditCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProducts.Designer.cs">
+      <DependentUpon>EditProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPublishers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPublishers.Designer.cs">
+      <DependentUpon>EditPublishers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUsers.Designer.cs">
+      <DependentUpon>EditUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -310,6 +352,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CheckOut.resx">
       <DependentUpon>CheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAuthors.resx">
+      <DependentUpon>EditAuthors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditBorrowOrders.resx">
+      <DependentUpon>EditBorrowOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditBuyOrders.resx">
+      <DependentUpon>EditBuyOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCards.resx">
+      <DependentUpon>EditCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProducts.resx">
+      <DependentUpon>EditProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPublishers.resx">
+      <DependentUpon>EditPublishers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUsers.resx">
+      <DependentUpon>EditUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

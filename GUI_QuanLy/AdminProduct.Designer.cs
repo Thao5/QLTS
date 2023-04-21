@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnUpdateProduct = new System.Windows.Forms.Button();
             this.btnAddProduct = new System.Windows.Forms.Button();
             this.btnDeleteProduct = new System.Windows.Forms.Button();
             this.btnEditProduct = new System.Windows.Forms.Button();
@@ -41,7 +40,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightGray;
-            this.panel2.Controls.Add(this.btnUpdateProduct);
             this.panel2.Controls.Add(this.btnAddProduct);
             this.panel2.Controls.Add(this.btnDeleteProduct);
             this.panel2.Controls.Add(this.btnEditProduct);
@@ -50,21 +48,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(971, 60);
             this.panel2.TabIndex = 3;
-            // 
-            // btnUpdateProduct
-            // 
-            this.btnUpdateProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdateProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
-            this.btnUpdateProduct.FlatAppearance.BorderSize = 0;
-            this.btnUpdateProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateProduct.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateProduct.Location = new System.Drawing.Point(442, 10);
-            this.btnUpdateProduct.Name = "btnUpdateProduct";
-            this.btnUpdateProduct.Size = new System.Drawing.Size(106, 40);
-            this.btnUpdateProduct.TabIndex = 32;
-            this.btnUpdateProduct.Text = "Update";
-            this.btnUpdateProduct.UseVisualStyleBackColor = false;
             // 
             // btnAddProduct
             // 
@@ -147,6 +130,5 @@
         private System.Windows.Forms.Button btnEditProduct;
         private System.Windows.Forms.DataGridView dataGridAdminProduct;
         private System.Windows.Forms.Button btnAddProduct;
-        private System.Windows.Forms.Button btnUpdateProduct;
     }
 }
