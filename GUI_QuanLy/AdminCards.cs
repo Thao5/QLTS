@@ -12,6 +12,7 @@ namespace GUI_Quanly
 {
     public partial class AdminCards : Form
     {
+        public static String id_card;
         public AdminCards()
         {
             InitializeComponent();
@@ -48,6 +49,20 @@ namespace GUI_Quanly
                     db.codes.Remove(db.codes.Find(ID));
                     db.SaveChanges();
                     loadData();
+                }
+            }
+        }
+
+        private void btnEditCards_Click(object sender, EventArgs e)
+        {
+            if (dataGridAdminCards.SelectedRows.Count > 0)
+            {
+                using (quanlytiemsachEntities3 db = new quanlytiemsachEntities3())
+                {
+                    DataGridViewRow row = dataGridAdminCards.SelectedRows[0];
+                    id_card = Convert.ToString(row.Cells[0].Value.ToString());
+                    EditCards editCards = new EditCards();
+                    editCards.Show();
                 }
             }
         }

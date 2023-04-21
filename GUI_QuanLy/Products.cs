@@ -31,7 +31,7 @@ namespace GUI_Quanly
                     {
                         if (db.taikhoans.Find(Login.taikhoanuser.id).sotienconlai >= db.saches.Find(ID).gia_thue)
                         {
-                            db.sachduocthues.Add(new sachduocthue() { gia_thue = db.saches.Find(ID).gia_thue, ngay_thue = DateTime.Now, created_date = DateTime.Now, id_sach = ID, id_user = Login.taikhoanuser.id });
+                            db.sachduocthues.Add(new sachduocthue() { gia_thue = db.saches.Find(ID).gia_thue, ngay_thue = DateTime.Now, ngay_tra = DateTime.Now.AddDays(60), created_date = DateTime.Now, id_sach = ID, id_user = Login.taikhoanuser.id });
                             db.taikhoans.Find(Login.taikhoanuser.id).sotienconlai -= db.saches.Find(ID).gia_thue;
                             db.SaveChanges();
                             result = MessageBox.Show("Đã thuê thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

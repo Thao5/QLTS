@@ -19,12 +19,27 @@ namespace GUI_Quanly
 
         private void btnCancelPublisher_Click(object sender, EventArgs e)
         {
+            
             this.Close();
         }
 
         private void btnSavePublisher_Click(object sender, EventArgs e)
         {
+            using (quanlytiemsachEntities3 db = new quanlytiemsachEntities3())
+            {
+                db.NXBs.Find(AdminPublishers.id_NXB).name = txtNXB.Text;
+                db.SaveChanges();
+            }
             this.Close();
+        }
+
+        private void EditPublishers_Load(object sender, EventArgs e)
+        {
+            using(quanlytiemsachEntities3 db = new quanlytiemsachEntities3())
+            {
+                txtID.Text = AdminPublishers.id_NXB;
+                txtNXB.Text = db.NXBs.Find(AdminPublishers.id_NXB).name;
+            }
         }
     }
 }

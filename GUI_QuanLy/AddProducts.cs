@@ -63,8 +63,18 @@ namespace GUI_Quanly
 
         private void btnSaveProduct_Click(object sender, EventArgs e)
         {
-            themSach(txtID.Text, txtTenSach.Text,DateTime.ParseExact(dateXuatBan.Text, "yyyy/MM/dd", null), decimal.Parse(txtGiaBan.Text), int.Parse(txtSoLuong.Text), cbTacGia.SelectedValue.ToString(), txtTheLoai.Text, cbNhaXB.SelectedValue.ToString(), decimal.Parse(txtGiaNhap.Text), decimal.Parse(txtGiaThue.Text));
-            this.Close();
+                List<String> listID = new List<String>();
+                DataGridViewRow drow = new DataGridViewRow();
+                for(int i = 0; i <= dataGridAuthors.Rows.Count -1; i++)
+                {
+                    drow = dataGridAuthors.Rows[i];
+                    if (Convert.ToBoolean(drow.Cells[0].Value) == true)
+                    {
+                        listID.Add(drow.Cells[1].Value.ToString());
+                    }
+                }
+                themSach(txtID.Text, txtTenSach.Text, DateTime.ParseExact(dateXuatBan.Text, "yyyy/MM/dd", null), decimal.Parse(txtGiaBan.Text), int.Parse(txtSoLuong.Text), listID, txtTheLoai.Text, cbNhaXB.SelectedValue.ToString(), decimal.Parse(txtGiaNhap.Text), decimal.Parse(txtGiaThue.Text));
+                this.Close();
         }
 
         private void AddProducts_Load(object sender, EventArgs e)
@@ -80,24 +90,25 @@ namespace GUI_Quanly
                 cbNhaXB.ValueMember = "id";
                 cbNhaXB.DisplayMember = "name";
 
-                var test = from s in db.taikhoans where s.phanquyen.Equals(2) select s;
-                cbTacGia.DataSource = test.ToList();
-                cbTacGia.ValueMember = "id";
-                cbTacGia.DisplayMember = "name";
+                var test = from s in db.taikhoans where s.phanquyen.Equals(2) select new {id = s.id, name = s.ten};
+
+                dataGridAuthors.DataSource = test.ToList();
             }
         }
 
-        void themSach(String id, String name, DateTime ngay_xuat_ban, decimal gia_ban, int so_luong, String tac_gia, String the_loai, String nha_xuat_ban, decimal gia_nhap, decimal gia_thue)
+        void themSach(String id, String name, DateTime ngay_xuat_ban, decimal gia_ban, int so_luong, List<String> listID, String the_loai, String nha_xuat_ban, decimal gia_nhap, decimal gia_thue)
         {
             using (quanlytiemsachEntities3 db = new quanlytiemsachEntities3())
             {
                 try
                 {
                     sach s = new sach() { id = id, name = name, gia_ban = gia_ban, gia_nhap = gia_nhap, gia_thue = gia_thue, id_nxb = nha_xuat_ban, ngay_xuat_ban = ngay_xuat_ban, so_luong = so_luong, the_loai = the_loai };
-                    sachthuoctacgia st = new sachthuoctacgia() { id_sach = s.id, id_user = tac_gia };
                     db.saches.Add(s);
-                    db.SaveChanges();
-                    db.sachthuoctacgias.Add(st);
+                    foreach (String id_user in listID)
+                    {
+                        sachthuoctacgia st = new sachthuoctacgia() { id_sach = s.id, id_user = id_user };
+                        db.sachthuoctacgias.Add(st);
+                    }
                     db.SaveChanges();
                 }
                 catch (System.Data.Entity.Validation.DbEntityValidationException dbEx)
@@ -123,6 +134,11 @@ namespace GUI_Quanly
         private void txtTheLoai_KeyPress(object sender, KeyPressEventArgs e)
         {
 
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

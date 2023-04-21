@@ -41,7 +41,6 @@
             this.lbUserName = new System.Windows.Forms.Label();
             this.lbName = new System.Windows.Forms.Label();
             this.btnChangePassword = new System.Windows.Forms.Button();
-            this.btnChangeUserName = new System.Windows.Forms.Button();
             this.btnPurchase = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -49,10 +48,9 @@
             // 
             this.lbsomthing.AutoSize = true;
             this.lbsomthing.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbsomthing.Location = new System.Drawing.Point(9, 27);
-            this.lbsomthing.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbsomthing.Location = new System.Drawing.Point(12, 33);
             this.lbsomthing.Name = "lbsomthing";
-            this.lbsomthing.Size = new System.Drawing.Size(72, 31);
+            this.lbsomthing.Size = new System.Drawing.Size(86, 38);
             this.lbsomthing.TabIndex = 0;
             this.lbsomthing.Text = "Tên ";
             // 
@@ -60,10 +58,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 161);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(12, 198);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 31);
+            this.label1.Size = new System.Drawing.Size(256, 38);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tên người dùng";
             // 
@@ -71,10 +68,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(9, 225);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(12, 277);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 31);
+            this.label2.Size = new System.Drawing.Size(159, 38);
             this.label2.TabIndex = 2;
             this.label2.Text = "Mật khẩu";
             // 
@@ -82,10 +78,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 93);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(12, 114);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 31);
+            this.label3.Size = new System.Drawing.Size(177, 38);
             this.label3.TabIndex = 3;
             this.label3.Text = "Ngày Sinh";
             // 
@@ -93,10 +88,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 349);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(12, 430);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(220, 31);
+            this.label4.Size = new System.Drawing.Size(262, 38);
             this.label4.TabIndex = 4;
             this.label4.Text = "Loại người dùng";
             // 
@@ -104,10 +98,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(9, 286);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(12, 352);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(198, 31);
+            this.label5.Size = new System.Drawing.Size(236, 38);
             this.label5.TabIndex = 5;
             this.label5.Text = "Số tiền còn lại";
             // 
@@ -115,10 +108,9 @@
             // 
             this.lbMoney.AutoSize = true;
             this.lbMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMoney.Location = new System.Drawing.Point(339, 286);
-            this.lbMoney.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbMoney.Location = new System.Drawing.Point(452, 352);
             this.lbMoney.Name = "lbMoney";
-            this.lbMoney.Size = new System.Drawing.Size(201, 31);
+            this.lbMoney.Size = new System.Drawing.Size(242, 38);
             this.lbMoney.TabIndex = 11;
             this.lbMoney.Text = "Tên người dùng";
             // 
@@ -126,10 +118,9 @@
             // 
             this.lbLoaiNguoiDung.AutoSize = true;
             this.lbLoaiNguoiDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLoaiNguoiDung.Location = new System.Drawing.Point(339, 349);
-            this.lbLoaiNguoiDung.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbLoaiNguoiDung.Location = new System.Drawing.Point(452, 430);
             this.lbLoaiNguoiDung.Name = "lbLoaiNguoiDung";
-            this.lbLoaiNguoiDung.Size = new System.Drawing.Size(201, 31);
+            this.lbLoaiNguoiDung.Size = new System.Drawing.Size(242, 38);
             this.lbLoaiNguoiDung.TabIndex = 10;
             this.lbLoaiNguoiDung.Text = "Tên người dùng";
             // 
@@ -137,10 +128,9 @@
             // 
             this.lbNgaySinh.AutoSize = true;
             this.lbNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNgaySinh.Location = new System.Drawing.Point(339, 93);
-            this.lbNgaySinh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbNgaySinh.Location = new System.Drawing.Point(452, 114);
             this.lbNgaySinh.Name = "lbNgaySinh";
-            this.lbNgaySinh.Size = new System.Drawing.Size(201, 31);
+            this.lbNgaySinh.Size = new System.Drawing.Size(242, 38);
             this.lbNgaySinh.TabIndex = 9;
             this.lbNgaySinh.Text = "Tên người dùng";
             // 
@@ -148,10 +138,9 @@
             // 
             this.lbPassword.AutoSize = true;
             this.lbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPassword.Location = new System.Drawing.Point(339, 225);
-            this.lbPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbPassword.Location = new System.Drawing.Point(452, 277);
             this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(201, 31);
+            this.lbPassword.Size = new System.Drawing.Size(242, 38);
             this.lbPassword.TabIndex = 8;
             this.lbPassword.Text = "Tên người dùng";
             // 
@@ -159,10 +148,9 @@
             // 
             this.lbUserName.AutoSize = true;
             this.lbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUserName.Location = new System.Drawing.Point(339, 161);
-            this.lbUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbUserName.Location = new System.Drawing.Point(452, 198);
             this.lbUserName.Name = "lbUserName";
-            this.lbUserName.Size = new System.Drawing.Size(201, 31);
+            this.lbUserName.Size = new System.Drawing.Size(242, 38);
             this.lbUserName.TabIndex = 7;
             this.lbUserName.Text = "Tên người dùng";
             // 
@@ -170,10 +158,9 @@
             // 
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.Location = new System.Drawing.Point(339, 27);
-            this.lbName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbName.Location = new System.Drawing.Point(452, 33);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(201, 31);
+            this.lbName.Size = new System.Drawing.Size(242, 38);
             this.lbName.TabIndex = 6;
             this.lbName.Text = "Tên người dùng";
             // 
@@ -184,28 +171,14 @@
             this.btnChangePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChangePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangePassword.ForeColor = System.Drawing.Color.White;
-            this.btnChangePassword.Location = new System.Drawing.Point(616, 228);
-            this.btnChangePassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChangePassword.Location = new System.Drawing.Point(821, 281);
+            this.btnChangePassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnChangePassword.Name = "btnChangePassword";
-            this.btnChangePassword.Size = new System.Drawing.Size(118, 32);
+            this.btnChangePassword.Size = new System.Drawing.Size(157, 39);
             this.btnChangePassword.TabIndex = 15;
             this.btnChangePassword.Text = "Đổi mật khẩu";
             this.btnChangePassword.UseVisualStyleBackColor = false;
-            // 
-            // btnChangeUserName
-            // 
-            this.btnChangeUserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
-            this.btnChangeUserName.FlatAppearance.BorderSize = 0;
-            this.btnChangeUserName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChangeUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChangeUserName.ForeColor = System.Drawing.Color.White;
-            this.btnChangeUserName.Location = new System.Drawing.Point(9, 443);
-            this.btnChangeUserName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnChangeUserName.Name = "btnChangeUserName";
-            this.btnChangeUserName.Size = new System.Drawing.Size(201, 32);
-            this.btnChangeUserName.TabIndex = 16;
-            this.btnChangeUserName.Text = "Đổi thông tin người dùng";
-            this.btnChangeUserName.UseVisualStyleBackColor = false;
+            this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
             // btnPurchase
             // 
@@ -214,21 +187,21 @@
             this.btnPurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPurchase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPurchase.ForeColor = System.Drawing.Color.White;
-            this.btnPurchase.Location = new System.Drawing.Point(262, 443);
-            this.btnPurchase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPurchase.Location = new System.Drawing.Point(349, 545);
+            this.btnPurchase.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPurchase.Name = "btnPurchase";
-            this.btnPurchase.Size = new System.Drawing.Size(118, 32);
+            this.btnPurchase.Size = new System.Drawing.Size(157, 39);
             this.btnPurchase.TabIndex = 17;
             this.btnPurchase.Text = "Nạp tiền";
             this.btnPurchase.UseVisualStyleBackColor = false;
+            this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
             // 
             // Users
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(952, 627);
+            this.ClientSize = new System.Drawing.Size(1269, 772);
             this.Controls.Add(this.btnPurchase);
-            this.Controls.Add(this.btnChangeUserName);
             this.Controls.Add(this.btnChangePassword);
             this.Controls.Add(this.lbMoney);
             this.Controls.Add(this.lbLoaiNguoiDung);
@@ -242,7 +215,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbsomthing);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Users";
             this.Text = "Users";
             this.Load += new System.EventHandler(this.Users_Load);
@@ -266,7 +239,6 @@
         private System.Windows.Forms.Label lbUserName;
         private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.Button btnChangePassword;
-        private System.Windows.Forms.Button btnChangeUserName;
         private System.Windows.Forms.Button btnPurchase;
     }
 }

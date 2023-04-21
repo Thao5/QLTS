@@ -37,7 +37,7 @@ namespace GUI_Quanly
 
         private void btnSaveCards_Click(object sender, EventArgs e)
         {
-            themCard(txtIDCard.Text, Boolean.Parse(cbTrangThaiCard.SelectedItem.ToString()), cbUserCard.SelectedValue.ToString(), DateTime.ParseExact(dateNgayNap.Text, "dd/MM/yyyy", null));
+            themCard(txtIDCard.Text, Boolean.Parse(cbTrangThaiCard.SelectedItem.ToString()));
             this.Close();
         }
 
@@ -48,24 +48,17 @@ namespace GUI_Quanly
 
         private void AddCards_Load(object sender, EventArgs e)
         {
-            using(quanlytiemsachEntities3 db = new quanlytiemsachEntities3())
-            {
-                var test = from s in db.taikhoans select s;
-                cbUserCard.DataSource = test.ToList();
-                cbUserCard.ValueMember = "id";
-                cbUserCard.DisplayMember = "name";
-            }
-            
+           
         }
 
-        void themCard(String id, Boolean valid, String id_user, DateTime ngaynap)
+        void themCard(String id, Boolean valid)
         {
             using(quanlytiemsachEntities3 db = new quanlytiemsachEntities3())
             {
                 try
                 {
 
-                    db.codes.Add(new code() { id = id, valid = valid, id_user = id_user, ngaynap = ngaynap });
+                    db.codes.Add(new code() { id = id, valid = valid});
                     db.SaveChanges();
                 }
                 catch (System.Data.Entity.Validation.DbEntityValidationException dbEx)

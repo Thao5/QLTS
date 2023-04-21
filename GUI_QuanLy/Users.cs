@@ -39,5 +39,17 @@ namespace GUI_Quanly
             }
             
         }
+
+        private void btnPurchase_Click(object sender, EventArgs e)
+        {
+            NapTien napTien = new NapTien();
+            napTien.Show();
+        }
+
+        private void btnChangePassword_Click(object sender, EventArgs e)
+        {
+            ChangePassword changePassword = new ChangePassword();
+            changePassword.Show();
+        }
     }
 }

@@ -86,5 +86,10 @@ namespace GUI_Quanly
         {
             Application.Exit();
         }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            changeForm(new ThongKe());
+        }
     }
 }

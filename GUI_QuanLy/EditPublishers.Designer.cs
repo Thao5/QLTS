@@ -32,7 +32,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btnCancelPublisher = new System.Windows.Forms.Button();
             this.btnSavePublisher = new System.Windows.Forms.Button();
-            this.txtTenSach = new System.Windows.Forms.TextBox();
+            this.txtNXB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -86,14 +86,14 @@
             this.btnSavePublisher.UseVisualStyleBackColor = false;
             this.btnSavePublisher.Click += new System.EventHandler(this.btnSavePublisher_Click);
             // 
-            // txtTenSach
+            // txtNXB
             // 
-            this.txtTenSach.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTenSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenSach.Location = new System.Drawing.Point(303, 236);
-            this.txtTenSach.Name = "txtTenSach";
-            this.txtTenSach.Size = new System.Drawing.Size(354, 34);
-            this.txtTenSach.TabIndex = 35;
+            this.txtNXB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNXB.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNXB.Location = new System.Drawing.Point(303, 236);
+            this.txtNXB.Name = "txtNXB";
+            this.txtNXB.Size = new System.Drawing.Size(354, 34);
+            this.txtNXB.TabIndex = 35;
             // 
             // label1
             // 
@@ -115,10 +115,11 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btnCancelPublisher);
             this.Controls.Add(this.btnSavePublisher);
-            this.Controls.Add(this.txtTenSach);
+            this.Controls.Add(this.txtNXB);
             this.Controls.Add(this.label1);
             this.Name = "EditPublishers";
             this.Text = "EditPublishers";
+            this.Load += new System.EventHandler(this.EditPublishers_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,7 +131,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnCancelPublisher;
         private System.Windows.Forms.Button btnSavePublisher;
-        private System.Windows.Forms.TextBox txtTenSach;
+        private System.Windows.Forms.TextBox txtNXB;
         private System.Windows.Forms.Label label1;
     }
 }

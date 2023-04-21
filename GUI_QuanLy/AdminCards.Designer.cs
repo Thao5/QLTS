@@ -95,6 +95,7 @@
             this.btnEditCards.TabIndex = 0;
             this.btnEditCards.Text = "Edit";
             this.btnEditCards.UseVisualStyleBackColor = false;
+            this.btnEditCards.Click += new System.EventHandler(this.btnEditCards_Click);
             // 
             // dataGridAdminCards
             // 

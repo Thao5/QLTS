@@ -13,6 +13,7 @@ namespace GUI_Quanly
 {
     public partial class AdminProduct : Form
     {
+        public static String id_product;
         public AdminProduct()
         {
             InitializeComponent();
@@ -51,6 +52,20 @@ namespace GUI_Quanly
                     loadData();
                 }
                 
+            }
+        }
+
+        private void btnEditProduct_Click(object sender, EventArgs e)
+        {
+            if (dataGridAdminProduct.SelectedRows.Count > 0)
+            {
+                using (quanlytiemsachEntities3 db = new quanlytiemsachEntities3())
+                {
+                    DataGridViewRow row = dataGridAdminProduct.SelectedRows[0];
+                    id_product = Convert.ToString(row.Cells[0].Value.ToString());
+                    EditProducts editProducts = new EditProducts();
+                    editProducts.Show();
+                }
             }
         }
     }

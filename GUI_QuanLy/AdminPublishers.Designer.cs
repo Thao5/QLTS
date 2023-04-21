@@ -95,6 +95,7 @@
             this.btnEditPublishers.TabIndex = 0;
             this.btnEditPublishers.Text = "Edit";
             this.btnEditPublishers.UseVisualStyleBackColor = false;
+            this.btnEditPublishers.Click += new System.EventHandler(this.btnEditPublishers_Click);
             // 
             // dataGridAdminPublishers
             // 

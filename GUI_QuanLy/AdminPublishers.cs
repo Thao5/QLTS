@@ -12,6 +12,7 @@ namespace GUI_Quanly
 {
     public partial class AdminPublishers : Form
     {
+        public static String id_NXB;
         public AdminPublishers()
         {
             InitializeComponent();
@@ -56,6 +57,20 @@ namespace GUI_Quanly
                     db.NXBs.Remove(db.NXBs.Find(ID));
                     db.SaveChanges();
                     loadData();
+                }
+            }
+        }
+
+        private void btnEditPublishers_Click(object sender, EventArgs e)
+        {
+            if (dataGridAdminPublishers.SelectedRows.Count > 0)
+            {
+                using (quanlytiemsachEntities3 db = new quanlytiemsachEntities3())
+                {
+                    DataGridViewRow row = dataGridAdminPublishers.SelectedRows[0];
+                    id_NXB = Convert.ToString(row.Cells[0].Value.ToString());
+                    EditPublishers editPublishers = new EditPublishers();
+                    editPublishers.Show();
                 }
             }
         }

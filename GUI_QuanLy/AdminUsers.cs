@@ -13,6 +13,7 @@ namespace GUI_Quanly
 {
     public partial class AdminUsers : Form
     {
+        public static String id_user;
         public AdminUsers()
         {
             InitializeComponent();
@@ -57,6 +58,20 @@ namespace GUI_Quanly
                     db.taikhoans.Remove(db.taikhoans.Find(ID));
                     db.SaveChanges();
                     loadData();
+                }
+            }
+        }
+
+        private void btnEditUsers_Click(object sender, EventArgs e)
+        {
+            if (dataGridAdminUsers.SelectedRows.Count > 0)
+            {
+                using (quanlytiemsachEntities3 db = new quanlytiemsachEntities3())
+                {
+                    DataGridViewRow row = dataGridAdminUsers.SelectedRows[0];
+                    id_user = Convert.ToString(row.Cells[0].Value.ToString());
+                    EditUsers editUsers = new EditUsers();
+                    editUsers.Show();
                 }
             }
         }

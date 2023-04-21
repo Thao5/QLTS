@@ -46,7 +46,7 @@ namespace GUI_Quanly
         {
             using(quanlytiemsachEntities3 db = new quanlytiemsachEntities3())
             {
-                db.sachduocthues.Add(new sachduocthue() { id_sach = id_sach, id_user = id_user, ngay_thue = ngay_thue, created_date = DateTime.Now });
+                db.sachduocthues.Add(new sachduocthue() { id_sach = id_sach, id_user = id_user, ngay_thue = ngay_thue, ngay_tra = ngay_thue.AddDays(60), created_date = DateTime.Now });
                 db.SaveChanges();
             }
         }

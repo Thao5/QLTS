@@ -95,6 +95,7 @@
             this.btnEditUsers.TabIndex = 0;
             this.btnEditUsers.Text = "Edit";
             this.btnEditUsers.UseVisualStyleBackColor = false;
+            this.btnEditUsers.Click += new System.EventHandler(this.btnEditUsers_Click);
             // 
             // dataGridAdminUsers
             // 

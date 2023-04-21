@@ -96,6 +96,7 @@
             this.btnEditAuthors.TabIndex = 0;
             this.btnEditAuthors.Text = "Edit";
             this.btnEditAuthors.UseVisualStyleBackColor = false;
+            this.btnEditAuthors.Click += new System.EventHandler(this.btnEditAuthors_Click);
             // 
             // dataGridAdminAuthors
             // 

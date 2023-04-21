@@ -30,8 +30,6 @@
         {
             this.cbNhaXB = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.cbTacGia = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.dateXuatBan = new System.Windows.Forms.DateTimePicker();
             this.btnCancelProduct = new System.Windows.Forms.Button();
             this.btnSaveProduct = new System.Windows.Forms.Button();
@@ -56,7 +54,7 @@
             // 
             this.cbNhaXB.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbNhaXB.FormattingEnabled = true;
-            this.cbNhaXB.Location = new System.Drawing.Point(243, 423);
+            this.cbNhaXB.Location = new System.Drawing.Point(241, 373);
             this.cbNhaXB.Name = "cbNhaXB";
             this.cbNhaXB.Size = new System.Drawing.Size(354, 37);
             this.cbNhaXB.TabIndex = 43;
@@ -65,30 +63,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(97, 429);
+            this.label9.Location = new System.Drawing.Point(95, 379);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(140, 25);
             this.label9.TabIndex = 42;
             this.label9.Text = "Nhà Xuất Bản:";
-            // 
-            // cbTacGia
-            // 
-            this.cbTacGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTacGia.FormattingEnabled = true;
-            this.cbTacGia.Location = new System.Drawing.Point(243, 311);
-            this.cbTacGia.Name = "cbTacGia";
-            this.cbTacGia.Size = new System.Drawing.Size(354, 37);
-            this.cbTacGia.TabIndex = 41;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(151, 317);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(87, 25);
-            this.label8.TabIndex = 40;
-            this.label8.Text = "Tác Giả:";
             // 
             // dateXuatBan
             // 
@@ -135,7 +114,7 @@
             // txtGiaNhap
             // 
             this.txtGiaNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGiaNhap.Location = new System.Drawing.Point(243, 482);
+            this.txtGiaNhap.Location = new System.Drawing.Point(241, 432);
             this.txtGiaNhap.Name = "txtGiaNhap";
             this.txtGiaNhap.Size = new System.Drawing.Size(354, 34);
             this.txtGiaNhap.TabIndex = 36;
@@ -145,7 +124,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(138, 488);
+            this.label7.Location = new System.Drawing.Point(136, 438);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 25);
             this.label7.TabIndex = 35;
@@ -155,7 +134,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(142, 371);
+            this.label6.Location = new System.Drawing.Point(140, 321);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(95, 25);
             this.label6.TabIndex = 34;
@@ -164,7 +143,7 @@
             // txtGiaThue
             // 
             this.txtGiaThue.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGiaThue.Location = new System.Drawing.Point(243, 537);
+            this.txtGiaThue.Location = new System.Drawing.Point(241, 487);
             this.txtGiaThue.Name = "txtGiaThue";
             this.txtGiaThue.Size = new System.Drawing.Size(354, 34);
             this.txtGiaThue.TabIndex = 33;
@@ -174,7 +153,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(138, 543);
+            this.label5.Location = new System.Drawing.Point(136, 493);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 25);
             this.label5.TabIndex = 32;
@@ -183,7 +162,7 @@
             // txtTheLoai
             // 
             this.txtTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTheLoai.Location = new System.Drawing.Point(243, 365);
+            this.txtTheLoai.Location = new System.Drawing.Point(241, 315);
             this.txtTheLoai.Name = "txtTheLoai";
             this.txtTheLoai.Size = new System.Drawing.Size(354, 34);
             this.txtTheLoai.TabIndex = 31;
@@ -279,8 +258,6 @@
             this.ClientSize = new System.Drawing.Size(921, 737);
             this.Controls.Add(this.cbNhaXB);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.cbTacGia);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.dateXuatBan);
             this.Controls.Add(this.btnCancelProduct);
             this.Controls.Add(this.btnSaveProduct);
@@ -301,6 +278,7 @@
             this.Controls.Add(this.label1);
             this.Name = "EditProducts";
             this.Text = "EditProducts";
+            this.Load += new System.EventHandler(this.EditProducts_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,8 +288,6 @@
 
         private System.Windows.Forms.ComboBox cbNhaXB;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox cbTacGia;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dateXuatBan;
         private System.Windows.Forms.Button btnCancelProduct;
         private System.Windows.Forms.Button btnSaveProduct;

@@ -118,6 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnThongKe.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
+        MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfnBBIOFDtdPqs1AAAB00lEQVRYR+2WTShEURTHhyx8hGQS
+        G4oNCQtrJVEsFEqykuUs7EY2UqzQrFjYiSyUhQ1RaiywpMiChY+sbCQfZeNj/M7tPL148/DmjSzev341
+        555zz/nPu3ObFwoU6N8rkUgUQxlk6dLfiaHj8AjX8Aw3cAK7sApzMAFD0A8tUAelkJphGuTBA5TokqyF
+        oQaaoBsiMAYzsAzbcAxi+AUswzsghkchW9u5i0IZdKqhJ7HfbrgHNmBW0+6isBXiGvoi+omRPQ3dReEg
+        LGjoi+jXCWsafhXJepAzfAM/JL+BiLa3vtS8hl9Fch2ikKFLKYk+1SC3qEDjEZgySSeR3IdmKPKRC6jS
+        /jGImmFOIikG7uHWR17BMrAIA2aYk0iKgUYNfRH9zsAysAntJuEkkuk2cODan2S6j+AKKswwJ5FM94/w
+        CXLNMCeR/PURUC9DhkGumJ0GzZsjgHx4NJuSiQIvBtrgEiZtyJ/StOYtA7Xy2WxKJgq8GtjS0IhYnojd
+        wBIcwqQpSCYKvBo4gl4bMtBuQN4ruiDTbEomCrwYKAd5F1j5RIfmP67ht6IwDn0apix6FYJc62JdcheF
+        8jjv4NwnZHhM2/9MbMiBSp8Ia9tAgf6rQqF3lnw4O+V7/HAAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="btnAdminCards.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
@@ -170,7 +184,7 @@
   <data name="btnAdminTacGia.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAK2SURBVFhH7Zbb
+        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAK2SURBVFhH7Zbb
         i01hGMb3jDkwrjQIF0OmcUgm5TDiglJON6SmaMzFjJFEzsdyIYecJhcjklKaK41TmTDlMCNESFGUC1Gm
         UP6H7ffsnrVbiNWsb5XUPPVrfe/zvt+719rr8H25Qf1XyufzpdAA26ADLhiNt8McKHF5tqJxDTyAE6CT
         GOaUclX2TsIl29mJpkPhEUyz9VdRtw4qHIaLZs2wxWGiVAstDsNFsyswDirgMJwHXeU8mO+xnoVDoJrR

@@ -13,6 +13,7 @@ namespace GUI_Quanly
 {
     public partial class AdminAuthors : Form
     {
+        public static String id_tacgia;
         public AdminAuthors()
         {
             InitializeComponent();
@@ -64,6 +65,20 @@ namespace GUI_Quanly
         {
             AddAuthors addAuthors = new AddAuthors();
             addAuthors.Show();
+        }
+
+        private void btnEditAuthors_Click(object sender, EventArgs e)
+        {
+            if (dataGridAdminAuthors.SelectedRows.Count > 0)
+            {
+                using (quanlytiemsachEntities3 db = new quanlytiemsachEntities3())
+                {
+                    DataGridViewRow row = dataGridAdminAuthors.SelectedRows[0];
+                    id_tacgia = Convert.ToString(row.Cells[0].Value.ToString());
+                    EditAuthors editAuthors = new EditAuthors();
+                    editAuthors.Show();
+                }
+            }
         }
     }
 }

@@ -80,6 +80,10 @@
             // 
             this.cbLoaiNguoiDung.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbLoaiNguoiDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbLoaiNguoiDung.Items.AddRange(new object[] {
+            "admin",
+            "user",
+            "author"});
             this.cbLoaiNguoiDung.Location = new System.Drawing.Point(266, 391);
             this.cbLoaiNguoiDung.Name = "cbLoaiNguoiDung";
             this.cbLoaiNguoiDung.Size = new System.Drawing.Size(354, 37);
@@ -253,6 +257,7 @@
             this.Controls.Add(this.label1);
             this.Name = "EditUsers";
             this.Text = "EditUsers";
+            this.Load += new System.EventHandler(this.EditUsers_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -43,13 +43,15 @@
             this.btnSaveProduct = new System.Windows.Forms.Button();
             this.btnCancelProduct = new System.Windows.Forms.Button();
             this.dateXuatBan = new System.Windows.Forms.DateTimePicker();
-            this.cbTacGia = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cbNhaXB = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtTheLoai = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
+            this.dataGridAuthors = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridAuthors)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -122,7 +124,7 @@
             // txtGiaThue
             // 
             this.txtGiaThue.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGiaThue.Location = new System.Drawing.Point(224, 498);
+            this.txtGiaThue.Location = new System.Drawing.Point(225, 623);
             this.txtGiaThue.Name = "txtGiaThue";
             this.txtGiaThue.Size = new System.Drawing.Size(354, 34);
             this.txtGiaThue.TabIndex = 9;
@@ -132,7 +134,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(119, 504);
+            this.label5.Location = new System.Drawing.Point(120, 629);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 25);
             this.label5.TabIndex = 8;
@@ -142,7 +144,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(123, 332);
+            this.label6.Location = new System.Drawing.Point(124, 457);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(95, 25);
             this.label6.TabIndex = 10;
@@ -151,7 +153,7 @@
             // txtGiaNhap
             // 
             this.txtGiaNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGiaNhap.Location = new System.Drawing.Point(224, 443);
+            this.txtGiaNhap.Location = new System.Drawing.Point(225, 568);
             this.txtGiaNhap.Name = "txtGiaNhap";
             this.txtGiaNhap.Size = new System.Drawing.Size(354, 34);
             this.txtGiaNhap.TabIndex = 13;
@@ -161,7 +163,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(119, 449);
+            this.label7.Location = new System.Drawing.Point(120, 574);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 25);
             this.label7.TabIndex = 12;
@@ -175,7 +177,7 @@
             this.btnSaveProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveProduct.ForeColor = System.Drawing.Color.White;
-            this.btnSaveProduct.Location = new System.Drawing.Point(162, 586);
+            this.btnSaveProduct.Location = new System.Drawing.Point(207, 686);
             this.btnSaveProduct.Name = "btnSaveProduct";
             this.btnSaveProduct.Size = new System.Drawing.Size(106, 40);
             this.btnSaveProduct.TabIndex = 14;
@@ -191,7 +193,7 @@
             this.btnCancelProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelProduct.ForeColor = System.Drawing.Color.White;
-            this.btnCancelProduct.Location = new System.Drawing.Point(353, 586);
+            this.btnCancelProduct.Location = new System.Drawing.Point(398, 686);
             this.btnCancelProduct.Name = "btnCancelProduct";
             this.btnCancelProduct.Size = new System.Drawing.Size(106, 40);
             this.btnCancelProduct.TabIndex = 15;
@@ -209,15 +211,6 @@
             this.dateXuatBan.Size = new System.Drawing.Size(184, 34);
             this.dateXuatBan.TabIndex = 17;
             // 
-            // cbTacGia
-            // 
-            this.cbTacGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTacGia.FormattingEnabled = true;
-            this.cbTacGia.Location = new System.Drawing.Point(224, 272);
-            this.cbTacGia.Name = "cbTacGia";
-            this.cbTacGia.Size = new System.Drawing.Size(354, 37);
-            this.cbTacGia.TabIndex = 19;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -232,7 +225,7 @@
             // 
             this.cbNhaXB.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbNhaXB.FormattingEnabled = true;
-            this.cbNhaXB.Location = new System.Drawing.Point(224, 384);
+            this.cbNhaXB.Location = new System.Drawing.Point(225, 509);
             this.cbNhaXB.Name = "cbNhaXB";
             this.cbNhaXB.Size = new System.Drawing.Size(354, 37);
             this.cbNhaXB.TabIndex = 21;
@@ -241,7 +234,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(78, 390);
+            this.label9.Location = new System.Drawing.Point(79, 515);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(140, 25);
             this.label9.TabIndex = 20;
@@ -250,7 +243,7 @@
             // txtTheLoai
             // 
             this.txtTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTheLoai.Location = new System.Drawing.Point(224, 326);
+            this.txtTheLoai.Location = new System.Drawing.Point(225, 451);
             this.txtTheLoai.Name = "txtTheLoai";
             this.txtTheLoai.Size = new System.Drawing.Size(354, 34);
             this.txtTheLoai.TabIndex = 7;
@@ -275,14 +268,34 @@
             this.txtID.Size = new System.Drawing.Size(354, 34);
             this.txtID.TabIndex = 1;
             // 
+            // dataGridAuthors
+            // 
+            this.dataGridAuthors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridAuthors.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1});
+            this.dataGridAuthors.Location = new System.Drawing.Point(225, 278);
+            this.dataGridAuthors.Name = "dataGridAuthors";
+            this.dataGridAuthors.RowHeadersWidth = 51;
+            this.dataGridAuthors.RowTemplate.Height = 24;
+            this.dataGridAuthors.Size = new System.Drawing.Size(353, 150);
+            this.dataGridAuthors.TabIndex = 22;
+            this.dataGridAuthors.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
             // AddProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(973, 711);
+            this.ClientSize = new System.Drawing.Size(973, 757);
+            this.Controls.Add(this.dataGridAuthors);
             this.Controls.Add(this.cbNhaXB);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.cbTacGia);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dateXuatBan);
             this.Controls.Add(this.btnCancelProduct);
@@ -305,6 +318,7 @@
             this.Name = "AddProducts";
             this.Text = "AddProducts";
             this.Load += new System.EventHandler(this.AddProducts_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridAuthors)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -327,12 +341,13 @@
         private System.Windows.Forms.Button btnSaveProduct;
         private System.Windows.Forms.Button btnCancelProduct;
         private System.Windows.Forms.DateTimePicker dateXuatBan;
-        private System.Windows.Forms.ComboBox cbTacGia;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cbNhaXB;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtTheLoai;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.DataGridView dataGridAuthors;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
     }
 }

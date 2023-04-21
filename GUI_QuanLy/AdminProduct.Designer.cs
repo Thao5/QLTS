@@ -95,6 +95,7 @@
             this.btnEditProduct.TabIndex = 0;
             this.btnEditProduct.Text = "Edit";
             this.btnEditProduct.UseVisualStyleBackColor = false;
+            this.btnEditProduct.Click += new System.EventHandler(this.btnEditProduct_Click);
             // 
             // dataGridAdminProduct
             // 

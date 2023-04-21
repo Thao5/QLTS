@@ -230,6 +230,7 @@
             this.Controls.Add(this.label1);
             this.Name = "EditAuthors";
             this.Text = "EditAuthors";
+            this.Load += new System.EventHandler(this.EditAuthors_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
