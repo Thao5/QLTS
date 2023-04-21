@@ -81,5 +81,10 @@ namespace GUI_Quanly
         {
             changeForm(new AdminCards());
         }
+
+        private void AdminHome_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

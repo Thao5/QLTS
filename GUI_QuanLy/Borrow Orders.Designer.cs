@@ -108,6 +108,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Borrow_Orders";
             this.Text = "Borrow_Orders";
+            this.Load += new System.EventHandler(this.Borrow_Orders_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBorrowOrders)).EndInit();

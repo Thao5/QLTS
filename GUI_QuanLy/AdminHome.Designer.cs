@@ -290,6 +290,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "AdminHome";
             this.Text = "AdminHome";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdminHome_FormClosing);
             this.Load += new System.EventHandler(this.AdminHome_Load);
             this.panel1.ResumeLayout(false);
             this.panelTitle.ResumeLayout(false);

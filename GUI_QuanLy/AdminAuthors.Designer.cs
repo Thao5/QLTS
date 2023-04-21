@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnAddAuthors = new System.Windows.Forms.Button();
             this.btnUpdateAuthors = new System.Windows.Forms.Button();
             this.btnDeleteAuthors = new System.Windows.Forms.Button();
             this.btnEditAuthors = new System.Windows.Forms.Button();
             this.dataGridAdminAuthors = new System.Windows.Forms.DataGridView();
-            this.btnAddAuthors = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAdminAuthors)).BeginInit();
             this.SuspendLayout();
@@ -51,6 +51,22 @@
             this.panel2.Size = new System.Drawing.Size(1049, 60);
             this.panel2.TabIndex = 6;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // btnAddAuthors
+            // 
+            this.btnAddAuthors.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddAuthors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
+            this.btnAddAuthors.FlatAppearance.BorderSize = 0;
+            this.btnAddAuthors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddAuthors.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddAuthors.ForeColor = System.Drawing.Color.White;
+            this.btnAddAuthors.Location = new System.Drawing.Point(368, 8);
+            this.btnAddAuthors.Name = "btnAddAuthors";
+            this.btnAddAuthors.Size = new System.Drawing.Size(106, 40);
+            this.btnAddAuthors.TabIndex = 31;
+            this.btnAddAuthors.Text = "Add";
+            this.btnAddAuthors.UseVisualStyleBackColor = false;
+            this.btnAddAuthors.Click += new System.EventHandler(this.btnAddAuthors_Click);
             // 
             // btnUpdateAuthors
             // 
@@ -108,21 +124,6 @@
             this.dataGridAdminAuthors.RowTemplate.Height = 24;
             this.dataGridAdminAuthors.Size = new System.Drawing.Size(1049, 681);
             this.dataGridAdminAuthors.TabIndex = 7;
-            // 
-            // btnAddAuthors
-            // 
-            this.btnAddAuthors.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddAuthors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(77)))), ((int)(((byte)(45)))));
-            this.btnAddAuthors.FlatAppearance.BorderSize = 0;
-            this.btnAddAuthors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddAuthors.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddAuthors.ForeColor = System.Drawing.Color.White;
-            this.btnAddAuthors.Location = new System.Drawing.Point(368, 8);
-            this.btnAddAuthors.Name = "btnAddAuthors";
-            this.btnAddAuthors.Size = new System.Drawing.Size(106, 40);
-            this.btnAddAuthors.TabIndex = 31;
-            this.btnAddAuthors.Text = "Add";
-            this.btnAddAuthors.UseVisualStyleBackColor = false;
             // 
             // AdminAuthors
             // 

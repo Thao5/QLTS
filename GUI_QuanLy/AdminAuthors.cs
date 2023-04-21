@@ -59,5 +59,11 @@ namespace GUI_Quanly
                 }
             }
         }
+
+        private void btnAddAuthors_Click(object sender, EventArgs e)
+        {
+            AddAuthors addAuthors = new AddAuthors();
+            addAuthors.Show();
+        }
     }
 }

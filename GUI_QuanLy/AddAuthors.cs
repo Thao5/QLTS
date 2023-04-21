@@ -19,6 +19,7 @@ namespace GUI_Quanly
 
         private void btnSaveUsers_Click(object sender, EventArgs e)
         {
+            themAuthor(txtID.Text, txtHo.Text, txtTen.Text, DateTime.ParseExact(dateNgaySinh.Text, "dd/MM/yyyy", null), txtUserName.Text, txtPassword.Text, decimal.Parse(txtSoTien.Text));
             this.Close();
         }
 
@@ -32,6 +33,15 @@ namespace GUI_Quanly
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != '\b')
             {
                 e.Handled = true;
+            }
+        }
+
+        void themAuthor(String id, String ho, String ten, DateTime ngaysinh, String username, String password, decimal sotien)
+        {
+            using(quanlytiemsachEntities3 db =  new quanlytiemsachEntities3())
+            {
+                db.taikhoans.Add(new taikhoan() { id = id, ho = ho, ten = ten, ngaysinh = ngaysinh, username = username, password = password, sotienconlai = sotien, phanquyen = 2 });
+                db.SaveChanges();
             }
         }
     }
